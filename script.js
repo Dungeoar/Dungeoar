@@ -1,5 +1,5 @@
 var pane = $('#pane'),
-  box = $('#box'),
+  box = $('#chara'),
   w = pane.width() - box.width(),
   d = {},
   x = 3;
