@@ -1,28 +1,31 @@
-var pane = $('#pane'),
-  box = $('#chara'),
-  w = pane.width() - box.width(),
-  d = {},
-  x = 3;
+const image = document.querySelector(".image-continer");
 
-function newv(v, a, b) {
-  var n = parseInt(v, 10) - (d[a] ? x : 0) + (d[b] ? x : 0);
-  return n < 0 ? 0 : n > w ? w : n;
-}
+document.addEventListener("keydown", (e) => {
+  const key = e.keyCode;
+  const cs = getComputedStyle(image);
 
-$(window).keydown(function(e) {
-  d[e.which] = true;
+  const change = 10;
+  const regex = /[\d\.]*/;
+
+  const left = cs.left;
+  const top = cs.top;
+  const leftNumber = left.match(regex);
+  const topNumber = top.match(regex);
+
+  // LEFT key pressed
+  if (key === 37) {
+    image.style.left = `${parseFloat(leftNumber[0]) - change}px`;
+  }
+  // TOP key pressed
+  if (key === 38) {
+    image.style.top = `${parseFloat(topNumber[0]) - change}px`;
+  }
+  // RIGHT key pressed
+  if (key === 39) {
+    image.style.left = `${parseFloat(leftNumber[0]) + change}px`;
+  }
+  // DOWN key pressed
+  if (key === 40) {
+    image.style.top = `${parseFloat(topNumber[0]) + change}px`;
+  }
 });
-$(window).keyup(function(e) {
-  d[e.which] = false;
-});
-
-setInterval(function() {
-  box.css({
-    left: function(i, v) {
-      return newv(v, 37, 39);
-    },
-    top: function(i, v) {
-      return newv(v, 38, 40);
-    }
-  });
-}, 20);
