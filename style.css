@@ -2,12 +2,10 @@ html {
   background-image: url("bg.png");
   background-repeat: repeat;
 }
-#pane {
+
+.image-continer {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  border: 2px;
-  border-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
