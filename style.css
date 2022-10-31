@@ -1,10 +1,12 @@
 html {
   background-image: url("bg.png");
-  background-repeat: repeat;
 }
 
-.img {
+#img {
   position: absolute;
 }
 
-
+body {
+  height: 100%;
+  overflow: hidden;
+}
