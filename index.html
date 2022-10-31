@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, inital-scale=1.0" />
-<title>Unblocked RPG</title>
-<style type="text/css">
-#img {
-  position: absolute;
-}
-
-</style>
-</head>
-<body>
-<html>
 
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Unblocked RPG</title>
+    <style type="text/css">
+      html {
+        background-image: url("bg.png");
+      }
 
+      #img {
+        position: absolute;
+      }
+
+    </style>
   </head>
 
   <body>
-    <div id="img"><img src="char (1).png"/></div>
+    <html>
+
+      <head>
+
+      </head>
+
+      <body>
+        <div id="img"><img src="char (1).png" /></div>
+      </body>
+
+    </html>
+
+    <script type="text/javascript">
+      (function() {
+        var xAxis = 0
+        var yAxis = 0;
+        const moveSpeed = 20;
+        const div = document.getElementById('img');
+        document.onkeydown = function(event) {
+          switch (event.keyCode) {
+            case 37:
+              xAxis -= moveSpeed;
+              div.style.left = xAxis + 'px';
+              break;
+            case 38:
+              yAxis -= moveSpeed;
+              div.style.top = yAxis + 'px';
+              break;
+            case 39:
+              xAxis += moveSpeed;
+              div.style.left = xAxis + 'px';
+              break;
+            case 40:
+              yAxis += moveSpeed;
+              div.style.top = yAxis + 'px';
+              break;
+          }
+        };
+
+      })();
+
+    </script>
   </body>
 
 </html>
 
-<script type="text/javascript">
-(function() {
-var xAxis = 0
-var yAxis = 0;
-const moveSpeed = 20;
-const div = document.getElementById('img');
-document.onkeydown = function(event) {
-  switch (event.keyCode) {
-    case 37:
-      xAxis -= moveSpeed;
-      div.style.left = xAxis + 'px';
-      break;
-    case 38:
-      yAxis -= moveSpeed;
-      div.style.top = yAxis + 'px';
-      break;
-    case 39:
-      xAxis += moveSpeed;
-      div.style.left = xAxis + 'px';
-      break;
-    case 40:
-      yAxis += moveSpeed;
-      div.style.top = yAxis + 'px';
-      break;
-  }
-};
 
-})();
-</script>
-</body>
-</html>
+
