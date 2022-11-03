@@ -1,7 +1,3 @@
-html {
-  background-image: url("bg.png");
-}
-
 #img {
   position: absolute;
 }
@@ -9,4 +5,11 @@ html {
 body {
   height: 100%;
   overflow: hidden;
+  background-image: url("bg.png")  
+}
+
+#sword {
+  left: 100px;
+  top: 20px;
+  position: absolute;
 }
