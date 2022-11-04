@@ -15,3 +15,8 @@ body {
   top: 50%;
   position: absolute;
 }
+
+#swordImg {
+  width: 50%;
+  height: 50%;
+}
