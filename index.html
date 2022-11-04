@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="img"><img src="char__3_-removebg-preview (1).png"/></div>
-    <div id="sword"><img src="swordItem (1).png"/></div>
+    <div id="sword"><img src="swordItem (1).png" id="imgEl"/></div>
 <script type="text/javascript">
 (function() {
 //assorted functions code begin
@@ -41,7 +41,7 @@ document.onkeydown = function(event) {
       div.style.left = xAxis + 'px';
       if (DOMelementOverlapCheck(item, div) === true)
       {
-        document.getElementById("img").src="char (4) (2).png";
+        document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
       }
     break;
@@ -50,7 +50,7 @@ document.onkeydown = function(event) {
       div.style.top = yAxis + 'px';
       if (DOMelementOverlapCheck(item, div) === true)
       {
-        document.getElementById("img").src="char (4) (2).png";
+        document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
       }
     break;
@@ -59,7 +59,7 @@ document.onkeydown = function(event) {
       div.style.left = xAxis + 'px';
       if (DOMelementOverlapCheck(item, div) === true)
       {
-        document.getElementById("img").src="char (4) (2).png";
+        document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
       }
     break;
@@ -68,7 +68,7 @@ document.onkeydown = function(event) {
       div.style.top = yAxis + 'px';
  	  if (DOMelementOverlapCheck(item, div) === true)
       {
-        document.getElementById("img").src="char (4) (2).png";
+        document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
       }
     break;
