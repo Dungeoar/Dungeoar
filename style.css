@@ -1,6 +1,6 @@
 #img {
-  left: 0px;
-  top: 0px;
+  left: 50%;
+  top: 30px;
   position: absolute;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 #sword {
-  left: 75%;
-  top: 65%;
+  left: 50%;
+  top: 50%;
   position: absolute;
 }
