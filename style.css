@@ -20,3 +20,8 @@ body {
   width: 50%;
   height: 50%;
 }
+
+#LevelTransfer {
+  left: 50%;
+  top: 80%;
+}
