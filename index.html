@@ -10,11 +10,6 @@
     <div id="LevelTransfer"><img src="portal.png"/></div>
     <div id="img"><img src="char__3_-removebg-preview (1).png" id="imgEl"/></div>
     <div id="sword"><img src="swordItem (1).png" id="swordImg"/></div>
-    <script>
-        function OtherPage() {
-            self.location="part2.html";
-        }
-    </script>
     <button onclick="OtherPage();">press me</button>
 <script type="text/javascript">
 (function() {
@@ -31,10 +26,15 @@ function DOMelementOverlapCheck(div1, div2) {
   );
 }
 
+function openNew(htmlName) {
+    self.location=htmlName;
+}
 //assorted functions code end
 
 //assorted variable defenitions code begin
 const SwordCollect = document.getElementById("sword")
+const Portal = document.getElementById("LevelTransfer");
+const div = document.getElementById('img');
 var SwordCollectCollected = false;
 //assorted variable defenitions code end
 
@@ -42,7 +42,6 @@ var SwordCollectCollected = false;
 var xAxis = 50;
 var yAxis = 10;
 const moveSpeed = 10;
-const div = document.getElementById('img');
 document.onkeydown = function(event) {
   switch (event.keyCode) {
     case 37:
@@ -55,6 +54,10 @@ document.onkeydown = function(event) {
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
       }
+      if (DOMelementOverlapCheck(Portal, div) === true)
+      {
+          openNew("part2.html);
+      }
     break;
     case 38:
       yAxis -= moveSpeed;
@@ -65,6 +68,10 @@ document.onkeydown = function(event) {
         document.getElementById("sword").style.display='none';
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
+      }
+      if (DOMelementOverlapCheck(Portal, div) === true)
+      {
+          openNew("part2.html);
       }
     break;
     case 39:
@@ -77,6 +84,10 @@ document.onkeydown = function(event) {
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
       }
+      if (DOMelementOverlapCheck(Portal, div) === true)
+      {
+          openNew("part2.html);
+      }
     break;
     case 40:
       yAxis += moveSpeed;
@@ -87,6 +98,10 @@ document.onkeydown = function(event) {
         document.getElementById("sword").style.display='none';
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
+      }
+      if (DOMelementOverlapCheck(Portal, div) === true)
+      {
+          openNew("part2.html);
       }
     break;
   }
