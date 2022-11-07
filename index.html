@@ -29,6 +29,9 @@ function DOMelementOverlapCheck(div1, div2) {
 const SwordCollect = document.getElementById("sword")
 const Portal = document.getElementById("LevelTransfer");
 var SwordCollectCollected = false;
+var wait1 = false;
+var wait2 = false;
+var wait3 = false;
 //assorted variable defenitions code end
 
 //player movement code begin
@@ -72,12 +75,17 @@ document.onkeydown = function(event) {
         xAxis += moveSpeed;
         div.style.left = xAxis + 'px';
       }
-        if (DOMelementOverlapCheck(SwordCollect, div) === true)
+      if (DOMelementOverlapCheck(SwordCollect, div) === true)
       {
         SwordCollectCollected = true;
         document.getElementById("sword").style.display='none';
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
+        setTimeout(wait1 = true, 10000)
+        if (wait1 === true)
+        {
+          console.log("it waiteded")
+        }
       }
     break;
     case 40:
@@ -92,6 +100,11 @@ document.onkeydown = function(event) {
         document.getElementById("sword").style.display='none';
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
+        setTimeout(wait1 = true, 10000)
+        if (wait1 === true)
+        {
+          console.log("it waiteded")
+        }
       }
     break;
   }
