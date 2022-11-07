@@ -34,7 +34,6 @@ function openNew(htmlName) {
 //assorted variable defenitions code begin
 const SwordCollect = document.getElementById("sword")
 const Portal = document.getElementById("LevelTransfer");
-const div = document.getElementById('img');
 var SwordCollectCollected = false;
 //assorted variable defenitions code end
 
@@ -42,6 +41,7 @@ var SwordCollectCollected = false;
 var xAxis = 50;
 var yAxis = 10;
 const moveSpeed = 10;
+const div = document.getElementById('img');
 document.onkeydown = function(event) {
   switch (event.keyCode) {
     case 37:
