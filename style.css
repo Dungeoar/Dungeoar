@@ -22,6 +22,7 @@ body {
 }
 
 #LevelTransfer {
-  left: 50%;
-  top: 80%;
+  position: absolute;
+  left: 42%;
+  top: 60%;
 }
