@@ -9,7 +9,6 @@
 <body>
     <div id="img"><img src="char__3_-removebg-preview (1).png" id="imgEl"/></div>
     <div id="sword"><img src="swordItem (1).png" id="swordImg"/></div>
-    <button onclick="OtherPage();">press me</button>
 <script type="text/javascript">
 (function() {
 //assorted functions code begin
@@ -40,8 +39,11 @@ const div = document.getElementById('img');
 document.onkeydown = function(event) {
   switch (event.keyCode) {
     case 37:
-      xAxis -= moveSpeed;
-      div.style.left = xAxis + 'px';
+      if(!SwordCollectCollected)
+      {
+        xAxis -= moveSpeed;
+        div.style.left = xAxis + 'px';
+      }
       if (DOMelementOverlapCheck(SwordCollect, div) === true)
       {
         SwordCollectCollected = true;
@@ -51,8 +53,11 @@ document.onkeydown = function(event) {
       }
     break;
     case 38:
-      yAxis -= moveSpeed;
-      div.style.top = yAxis + 'px';
+      if(!SwordCollectCollected)
+      {
+        yAxis -= moveSpeed;
+        div.style.top = yAxis + 'px';
+      }
       if (DOMelementOverlapCheck(SwordCollect, div) === true)
       {
         SwordCollectCollected = true;
@@ -62,9 +67,12 @@ document.onkeydown = function(event) {
       }
     break;
     case 39:
-      xAxis += moveSpeed;
-      div.style.left = xAxis + 'px';
-      if (DOMelementOverlapCheck(SwordCollect, div) === true)
+      if(!SwordCollectCollected)
+      {      
+        xAxis += moveSpeed;
+        div.style.left = xAxis + 'px';
+      }
+        if (DOMelementOverlapCheck(SwordCollect, div) === true)
       {
         SwordCollectCollected = true;
         document.getElementById("sword").style.display='none';
@@ -73,9 +81,12 @@ document.onkeydown = function(event) {
       }
     break;
     case 40:
+      if(!SwordCollectCollected)
+      {
       yAxis += moveSpeed;
       div.style.top = yAxis + 'px';
- 	  if (DOMelementOverlapCheck(SwordCollect, div) === true)
+      }
+      if (DOMelementOverlapCheck(SwordCollect, div) === true)
       {
         SwordCollectCollected = true;
         document.getElementById("sword").style.display='none';
