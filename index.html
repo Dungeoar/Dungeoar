@@ -23,6 +23,10 @@ function DOMelementOverlapCheck(div1, div2) {
     domRect1.left > domRect2.right
   );
 }
+
+function waitTest() {
+  console.log("hi")
+}
 //assorted functions code end
 
 //assorted variable defenitions code begin
@@ -53,6 +57,7 @@ document.onkeydown = function(event) {
         document.getElementById("sword").style.display='none';
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
+        setTimeout(waitTest, 3000);
       }
     break;
     case 38:
@@ -67,6 +72,7 @@ document.onkeydown = function(event) {
         document.getElementById("sword").style.display='none';
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
+        setTimeout(waitTest, 3000);
       }
     break;
     case 39:
@@ -81,11 +87,6 @@ document.onkeydown = function(event) {
         document.getElementById("sword").style.display='none';
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
-        setTimeout(wait1 = true, 10000)
-        if (wait1 === true)
-        {
-          console.log("it waiteded")
-        }
       }
     break;
     case 40:
@@ -101,10 +102,7 @@ document.onkeydown = function(event) {
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
         setTimeout(wait1 = true, 100000)
-        if (wait1 === true)
-        {
-          console.log("it waiteded")
-        }
+        setTimeout(waitTest, 3000);
       }
     break;
   }
