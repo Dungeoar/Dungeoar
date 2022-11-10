@@ -4,10 +4,16 @@
   position: absolute;
 }
 
-body {
+body.l1 {
   height: 100%;
   overflow: hidden;
   background-image: url("bg.png")  
+}
+
+body.l1 {
+  height: 100%;
+  overflow: hidden;
+  background-image: url("caveBg.png")  
 }
 
 #sword {
