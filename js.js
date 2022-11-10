@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, inital-scale=1.0" />
-<title>RPG Webgame Testing</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <div id="img"><img src="char__3_-removebg-preview (1).png" id="imgEl"/></div>
-    <div id="sword"><img src="swordItem (1).png" id="swordImg"/></div>
-<script type="text/javascript">
 (function() {
 //assorted functions code begin
 function DOMelementOverlapCheck(div1, div2) {
@@ -32,7 +20,7 @@ function waitTest() {
 //assorted variable defenitions code begin
 const SwordCollect = document.getElementById("sword")
 const Portal = document.getElementById("LevelTransfer");
-var SwordCollectCollected = false
+var SwordCollectCollected = false;
 var wait1 = false;
 var wait2 = false;
 var wait3 = false;
@@ -59,13 +47,7 @@ document.onkeydown = function(event) {
       	console.log("DOM overlap detected");
         function AnimPart1() 
         {
-          document.body.style.backgroundImage = "url('blank.png')";
-          div.style.visibility= 'hidden';
-          function LoadLv2() 
-          {
-            self.location="l2.html";
-          }
-          setTimeout(LoadLv2, 1500);
+          document.getElementById("imgEl").src="char (6).png";
         }
         setTimeout(AnimPart1, 2000);      
       }
@@ -84,13 +66,7 @@ document.onkeydown = function(event) {
       	console.log("DOM overlap detected");
         function AnimPart1() 
         {
-          document.body.style.backgroundImage = "url('blank.png')";
-          div.style.visibility= 'hidden';
-          function LoadLv2() 
-          {
-            self.location="l2.html";
-          }
-          setTimeout(LoadLv2, 1500);
+          document.getElementById("imgEl").src="char (6).png";
         }
         setTimeout(AnimPart1, 2000);
       }
@@ -109,13 +85,7 @@ document.onkeydown = function(event) {
       	console.log("DOM overlap detected");
         function AnimPart1() 
         {
-          document.body.style.backgroundImage = "url('blank.png')";
-          div.style.visibility= 'hidden';
-          function LoadLv2() 
-          {
-            self.location="l2.html";
-          }
-          setTimeout(LoadLv2, 1500);
+          document.getElementById("imgEl").src="char (6).png";
         }
         setTimeout(AnimPart1, 2000);
       }
@@ -132,15 +102,10 @@ document.onkeydown = function(event) {
         document.getElementById("sword").style.display='none';
         document.getElementById("imgEl").src="char (4) (2).png";
       	console.log("DOM overlap detected");
+        setTimeout(wait1 = true, 100000)
         function AnimPart1() 
         {
-          document.body.style.backgroundImage = "url('blank.png')";
-          div.style.visibility= 'hidden';
-          function LoadLv2() 
-          {
-            self.location="l2.html";
-          }
-          setTimeout(LoadLv2, 1500);
+          document.getElementById("imgEl").src="char (6).png";
         }
         setTimeout(AnimPart1, 2000);
       }
@@ -150,6 +115,3 @@ document.onkeydown = function(event) {
 };
 //player movement code end
 })();
-</script>
-</body>
-</html>
