@@ -10,12 +10,6 @@ body.l1 {
   background-image: url("bg.png")  
 }
 
-body.l2 {
-  height: 100%;
-  overflow: hidden;
-  background-image: url("caveBg.png")  
-}
-
 #sword {
   left: 50%;
   top: 50%;
@@ -34,3 +28,4 @@ body.l2 {
   width: 80%;
   height: 80%;
 }
+
