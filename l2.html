@@ -7,5 +7,34 @@
     </head>
     <body class = "l2">
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
+        <script type="text/javascript">
+            (function() {
+              var xAxis = 100;
+              var yAxis = 10;
+              const moveSpeed = 20;
+              const div = document.getElementById('img');
+              document.onkeydown = function(event) {
+                switch (event.keyCode) {
+                  case 37:
+                    xAxis -= moveSpeed;
+                    div.style.left = xAxis + 'px';
+                    break;
+                  case 38:
+                    yAxis -= moveSpeed;
+                    div.style.top = yAxis + 'px';
+                    break;
+                  case 39:
+                    xAxis += moveSpeed;
+                    div.style.left = xAxis + 'px';
+                    break;
+                  case 40:
+                    yAxis += moveSpeed;
+                    div.style.top = yAxis + 'px';
+                    break;
+                }
+              };
+      
+            })();
+          </script>
     </body>
 </html>
