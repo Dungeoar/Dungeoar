@@ -6,4 +6,5 @@ function getISC() {
 
 function ISCtest() {
     playerXpos = 10;
+    console.log(playerXpos)
   }
