@@ -4,11 +4,15 @@
         <meta name="viewport" content="width=device-width, inital-scale=1.0" />
         <title>RPG Webgame Testing</title>
         <link href="l2Style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="path-to-javascript-file.js"></script>
     </head>
     <body class = "l2">
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
         <script type="text/javascript">
             (function() {
+              function getISC() {
+                console.log(playerXpos)
+              }
               var xAxis = 100;
               var yAxis = 10;
               const moveSpeed = 10;

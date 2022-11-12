@@ -1,0 +1,2 @@
+var playerXpos;
+var playerYpos;

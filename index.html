@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, inital-scale=1.0" />
   <title>RPG Webgame Testing</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="ISC.js"></script>
 </head>
-<body class = "l1">
+<body class = "l1" onload="ISCtest()">
     <div id="img"><img src="char__3_-removebg-preview (1).png" id="imgEl"/></div>
     <div id="sword"><img src="swordItem (1).png" id="swordImg"/></div>
 <script type="text/javascript">
@@ -24,8 +25,8 @@ function DOMelementOverlapCheck(div1, div2) {
   );
 }
 
-function waitTest() {
-  console.log("hi")
+function ISCtest() {
+  playerXpos = 10;
 }
 //assorted functions code end
 
