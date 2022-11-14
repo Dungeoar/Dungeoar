@@ -1,12 +1,15 @@
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
-        <title>RPG Webgame Testing</title>
-        <link href="l2Style.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="ISC.js"></script>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+      <title>RPG Webgame Testing</title>
+      <link href="l2Style.css" rel="stylesheet" type="text/css">
+      <script id="ReadCookies">
+        let x = document.cookie;
+        console.log(x);
+      </script>
     </head>
-    <body class = "l2" onload="getISC()">
+    <body class = "l2">
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
         <script type="text/javascript">
             (function() {
@@ -31,10 +34,9 @@
                   case 40:
                     yAxis += moveSpeed;
                     div.style.top = yAxis + 'px';
-                    break;
+                   break;
                 }
               };
-      
             })();
           </script>
     </body>
