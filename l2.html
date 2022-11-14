@@ -8,16 +8,14 @@
         let x = document.cookie;
         console.log(x);
         document.cookie = x + "; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+        function setXbycookie() {
+          document.getElementById("img").style.left = x;
+        }
       </script>
     </head>
-    <body class = "l2" onload="setXbycookie();">  
-        <script>
-          function setXbycookie() {
-            document.getElementById("img").style.left = x;
-          }
-        </script>
+    <body class = "l2" onload="setXbycookie();">
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
-        <script type="text/javascript" onload="setXbycookie();">
+        <script type="text/javascript">
             (function() {
               var xAxis = x;
               var yAxis = 10;
