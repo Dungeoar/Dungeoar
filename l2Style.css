@@ -1,10 +1,8 @@
 #img {
-    left: 100px;
-    top: 10px;
-    position: absolute;
-  }
-  
-  body.l2 {
+  top: 450px;
+  position: absolute;
+}
+body.l2 {
     height: 100%;
     overflow: hidden;
     background-image: url("caveBg.png")  

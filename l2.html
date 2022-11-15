@@ -1,16 +1,29 @@
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
-        <title>RPG Webgame Testing</title>
-        <link href="l2Style.css" rel="stylesheet" type="text/css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width" />
+      <title>RPG Webgame Testing</title>
+      <link href="l2Style.css" rel="stylesheet" type="text/css">
+      <script id="ReadCookies">
+        let xy = document.cookie;
+        document.cookie = xy + "; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+        function QuickMath(xOrY){
+          if (xOrY === "x" || xOrY === "X") {
+            const Xreturn = xy.split('-'); 
+            return Xreturn[0];
+          }
+        }
+        function setXbycookie() {
+          document.getElementById("img").style.left = QuickMath("x");
+        }
+      </script>
     </head>
-    <body class = "l2">
+    <body class = "l2" onload="setXbycookie();">
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
         <script type="text/javascript">
             (function() {
-              var xAxis = 100;
-              var yAxis = 10;
+              var xAxis = parseFloat(QuickMath("x"));
+              var yAxis = 450;
               const moveSpeed = 10;
               const div = document.getElementById('img');
               document.onkeydown = function(event) {
@@ -27,13 +40,12 @@
                     xAxis += moveSpeed;
                     div.style.left = xAxis + 'px';
                     break;
-                  case 40:
+                  case 40: 
                     yAxis += moveSpeed;
                     div.style.top = yAxis + 'px';
-                    break;
+                   break;
                 }
               };
-      
             })();
           </script>
     </body>
