@@ -9,11 +9,15 @@
         document.cookie = xy + "; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
         function QuickMath(xOrY){
           if (xOrY === "x" || xOrY === "X") {
-            return xy[0] * 100 + xy[1] * 10 + xy[2];
+            const Xreturn = xy.split('-'); 
+            return Xreturn[0];
+          }
+          else if (xOrY === "y" || xOrY === "Y") {
+            return null;
           }
         }
         function setXbycookie() {
-          document.getElementById("img").style.left = QuickMath(y);
+          document.getElementById("img").style.left = QuickMath(x);
         }
       </script>
     </head>
