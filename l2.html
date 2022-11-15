@@ -12,14 +12,9 @@
             const Xreturn = xy.split('-'); 
             return Xreturn[0];
           }
-          else if (xOrY === "y" || xOrY === "Y") {
-            const Yreturn = xy.split('-')
-            return Yreturn[1];
-          }
         }
         function setXbycookie() {
           document.getElementById("img").style.left = QuickMath("x");
-          document.getElementById("img").style.top = QuickMath("y");
         }
       </script>
     </head>
@@ -28,7 +23,7 @@
         <script type="text/javascript">
             (function() {
               var xAxis = parseFloat(QuickMath("x"));
-              var yAxis = parseFloat(QuickMath("y"));
+              var yAxis = 400;
               const moveSpeed = 10;
               const div = document.getElementById('img');
               document.onkeydown = function(event) {
