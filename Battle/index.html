@@ -17,12 +17,14 @@
       const nme = document.getElementById("nme");
       const char = document.getElementById("char");
       const fid = readId();
-      const nmeID = fid + "-nme/" + fid;
+      const nmeID = fid + "/" + fid + "-nme.png";
+      const charID = fid + "/" + fid + "-char.png";
       nme.src = nmeID;
+      char.src = charID;
     }
   </script>
 </head>
-<body>
+<body onload="setUp()">
   <div><img id="char"/></div>
   <div><img id="nme"/></div>
 </body>
