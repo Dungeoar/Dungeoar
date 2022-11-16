@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width" />
   <title>RPG Webgame Testing</title>
   <link href="fightHTML.css" rel="stylesheet" type="text/css">
-</head>
-<body>
   <script>
     function readId() {
       var Query = window.location.search;
@@ -14,5 +12,17 @@
       var QueryVal = QueryString.get('id')   
       return QueryVal;
     }
+    function setUp()
+    {
+      const nme = document.getElementById("nme");
+      const char = document.getElementById("char");
+      const fid = readId();
+      const nmeID = fid + "-nme/" + fid;
+      nme.src = nmeID;
+    }
   </script>
+</head>
+<body>
+  <div><img id="char"/></div>
+  <div><img id="nme"/></div>
 </body>
