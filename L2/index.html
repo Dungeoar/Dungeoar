@@ -45,23 +45,32 @@
                     div.style.left = xAxis + 'px';
                     if(DOMelementOverlapCheck(nmeDiv, div) === true)
                     {
-                      self.location("Battle/?id=3tv8fh")
+                      self.location="Battle/?id=3tv8fh";
                     }
                     break;
                   case 38:
                     yAxis -= moveSpeed;
                     div.style.top = yAxis + 'px';
-                    DOMelementOverlapCheck(nmeDiv, div);
+                    if(DOMelementOverlapCheck(nmeDiv, div) === true)
+                    {
+                      self.location="Battle/?id=3tv8fh";
+                    }
                     break;
                   case 39:
                     xAxis += moveSpeed;
                     div.style.left = xAxis + 'px';
-                    DOMelementOverlapCheck(nmeDiv, div);
+                    if(DOMelementOverlapCheck(nmeDiv, div) === true)
+                    {
+                      self.location="Battle/?id=3tv8fh";
+                    }
                     break;
                   case 40: 
                     yAxis += moveSpeed;
                     div.style.top = yAxis + 'px';
-                    DOMelementOverlapCheck(nmeDiv, div);
+                    if(DOMelementOverlapCheck(nmeDiv, div) === true)
+                    {
+                      self.location="Battle/?id=3tv8fh";
+                    }
                    break;
                 }
               };
