@@ -7,3 +7,8 @@ body.l2 {
     overflow: hidden;
     background-image: url("caveBg.png")  
   }
+#nme1 {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
