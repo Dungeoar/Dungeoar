@@ -8,6 +8,11 @@
 </head>
 <body>
   <script>
-    
+    function readId() {
+      var Query = window.location.search;
+      let QueryString = new URLSearchParams(Query);
+      var QueryVal = QueryString.get('id')   
+      return QueryVal;
+    }
   </script>
 </body>
