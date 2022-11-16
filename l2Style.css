@@ -10,5 +10,9 @@ body.l2 {
 #nme1 {
   position: absolute;
   left: 50%;
-  top: 90%;
+  top: 70%;
+}
+#nme {
+  width: 80%;
+  height: 80%;
 }
