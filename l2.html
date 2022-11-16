@@ -33,6 +33,7 @@
                   domRect1.left > domRect2.right
                 );
               }
+              const nmeDiv = document.getElementById("nme1");
               var xAxis = parseFloat(QuickMath("x"));
               var yAxis = 450;
               const moveSpeed = 10;
@@ -42,18 +43,22 @@
                   case 37:
                     xAxis -= moveSpeed;
                     div.style.left = xAxis + 'px';
+                    DOMelementOverlapCheck(nmeDiv, div);
                     break;
                   case 38:
                     yAxis -= moveSpeed;
                     div.style.top = yAxis + 'px';
+                    DOMelementOverlapCheck(nmeDiv, div);
                     break;
                   case 39:
                     xAxis += moveSpeed;
                     div.style.left = xAxis + 'px';
+                    DOMelementOverlapCheck(nmeDiv, div);
                     break;
                   case 40: 
                     yAxis += moveSpeed;
                     div.style.top = yAxis + 'px';
+                    DOMelementOverlapCheck(nmeDiv, div);
                    break;
                 }
               };
