@@ -23,11 +23,12 @@
       
       nme.src = nmeID;
       char.src = charID;
-      document.body.style.backgroundImage = "url(" + bgID;
+      document.body.style.backgroundImage = "url(" + bgID + ")";
     }
   </script>
 </head>
 <body onload="setUp()">
   <div id="charDiv"><img id="char"/></div>
+  <div id="life" class="char"><img id="lifeBar" class="char" src="life/3hp.png"></div>
   <div id="nmeDiv"><img id="nme"/></div>
 </body>
