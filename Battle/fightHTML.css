@@ -1,3 +1,17 @@
 #nme {
-    left: 60%;
+    width: 150%;
+}
+#nmeDiv {
+    position: absolute;
+    left: 70%;
+    top: 40px;
+}
+
+#char{
+    width: 250%;
+}
+#charDiv {
+    position: absolute;
+    top: 70%;
+    left: 100px;
 }
