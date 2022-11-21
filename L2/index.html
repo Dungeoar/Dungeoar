@@ -5,10 +5,13 @@
       <title>RPG Webgame Testing</title>
       <link href="l2Style.css" rel="stylesheet" type="text/css">
       <script id="ReadCookies">
-        let xy = localStorage.getItem('xpos');;
+        let xy = localStorage.getItem('xpos');
+        function setX() {
+          document.getElementById("img").style.left = parseFloat(xy);
+        }
       </script>
     </head>
-    <body class = "l2" onload="setXbycookie();">
+    <body class = "l2" onload="setX();">
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
         <div id = "nme1"><img src="3tv8fh-nme.png" id="nme"/></div>
         <script type="text/javascript">
