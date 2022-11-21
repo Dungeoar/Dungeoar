@@ -5,17 +5,7 @@
       <title>RPG Webgame Testing</title>
       <link href="l2Style.css" rel="stylesheet" type="text/css">
       <script id="ReadCookies">
-        let xy = document.cookie;
-        document.cookie = xy + "; expires=Wed, 23 Jun 2010 00:00:00 UTC;";
-        function QuickMath(xOrY){
-          if (xOrY === "x" || xOrY === "X") {
-            const Xreturn = xy.split('-'); 
-            return Xreturn[0];
-          }
-        }
-        function setXbycookie() {
-          document.getElementById("img").style.left = QuickMath("x");
-        }
+        let xy = localStorage.getItem('xpos');;
       </script>
     </head>
     <body class = "l2" onload="setXbycookie();">
@@ -34,7 +24,7 @@
                 );
               }
               const nmeDiv = document.getElementById("nme1");
-              var xAxis = parseFloat(QuickMath("x"));
+              var xAxis = parseFloat(xy);
               var yAxis = 350;
               const moveSpeed = 10;
               const div = document.getElementById('img');
