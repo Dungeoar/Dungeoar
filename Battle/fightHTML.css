@@ -16,6 +16,16 @@
     left: 100px;
 }
 #FightButton {
+    position: absolute;
     background-color: transparent;
     border-color: transparent;
+    left: 30%;
+    top: 60%
+}
+#RunButton {
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    left: 30%;
+    top: 60%
 }
