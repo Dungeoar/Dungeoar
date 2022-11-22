@@ -14,20 +14,24 @@
     }
     function setUp()
     {
+      const charHp = parseFloat(localStorage.getItem("charHp"));
+      const nmeHp = parseFloat(localStorage.getItem("nmeHp"));
       const nme = document.getElementById("nme");
       const char = document.getElementById("char");
       const fid = readId();
       const nmeID = fid + "/" + fid + "-nme.png";
       const charID = fid + "/" + fid + "-char.png";
       const bgID = fid + "/" + fid + "-BG.png";
+      const charHpID = "life/" + charHp + "hp-trimmy.png"
       nme.src = nmeID;
       char.src = charID;
       document.body.style.backgroundImage = "url(" + bgID + ")";
+      document.getElementById("lifeBarChar").src = charHpID;
     }
   </script>
 </head>
 <body onload="setUp()">
   <div id="charDiv"><img id="char"/></div>
-  <div id="life" class="char"><img id="lifeBar" class="char" src="life/3hp-trimmy.jpg"></div>
+  <div id="life" class="char"><img id="lifeBarChar" class="char" src="life/3hp-trimmy.jpg"></div>
   <div id="nmeDiv"><img id="nme"/></div>
 </body>
