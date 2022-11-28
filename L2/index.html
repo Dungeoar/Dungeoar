@@ -5,9 +5,11 @@
       <title>RPG Webgame Testing</title>
       <link href="l2Style.css" rel="stylesheet" type="text/css">
       <script id="ReadCookies">
-        let xy = localStorage.getItem('xpos');
-        function setX() {
-          document.getElementById("img").style.left = parseFloat(xy);
+        let x = localStorage.getItem('xpos');
+        let y = localStorage.getItem('ypos')
+        function setXY() {
+          document.getElementById("img").style.left = parseFloat(x);
+          document.getElementById("img").style.top = parseFloat(y);
         }
       </script>
     </head>
@@ -27,8 +29,8 @@
                 );
               }
               const nmeDiv = document.getElementById("nme1");
-              var xAxis = parseFloat(xy);
-              var yAxis = 350;
+              var xAxis = parseFloat(x);
+              var yAxis = parseFloat(y);
               const moveSpeed = 10;
               const div = document.getElementById('img');
               document.onkeydown = function(event) {
