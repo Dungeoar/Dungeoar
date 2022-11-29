@@ -8,10 +8,12 @@
   <script>
     var charHp = localStorage.getItem("charHp");
     var nmeHp = parseFloat(localStorage.getItem("nmeHp"));  
-    function getRandomArbitrary(min, max) {
+    function getRandomArbitrary(min, max) 
+    {
       return Math.random() * (max - min) + min;
     }
-    function readId() {
+    function readId() 
+    {
       var Query = window.location.search;
       let QueryString = new URLSearchParams(Query);
       var QueryVal = QueryString.get('id')   
@@ -46,7 +48,12 @@
       console.log(chanceRoll);
       if (chanceRoll === 1)
       {
-
+        
+      }
+      else
+      {
+        nmeHp--;
+        console.log(nmeHp);
       }
     }
   </script>
