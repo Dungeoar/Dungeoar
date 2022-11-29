@@ -39,7 +39,7 @@
     }
     function FightButton()
     {
-      getRandomArbitrary(1, 3)
+      console.log(getRandomArbitrary(1, 3));
     }
   </script>
 </head>
@@ -47,6 +47,6 @@
   <div id="charDiv"><img id="char"/></div>
   <div id="life" class="char"><img id="lifeBarChar" class="char"></div>
   <div id="nmeDiv"><img id="nme"/></div>
-  <div id="button"><div id="fight"><button id="FightButton"><img src="buttons/Fight-trimmy.png"/></button>
+  <div id="button"><div id="fight"><button id="FightButton" onclick="FightButton()"><img src="buttons/Fight-trimmy.png"/></button>
   </div><div id="run"><button id="RunButton" onclick="RunButton();"><img src="buttons/Run-trimmy.png"/></button></div></div>
 </body>
