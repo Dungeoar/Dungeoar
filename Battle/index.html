@@ -6,6 +6,8 @@
   <title>RPG Webgame Testing</title>
   <link href="fightHTML.css" rel="stylesheet" type="text/css">
   <script>
+    var charHp = localStorage.getItem("charHp");
+    var nmeHp = parseFloat(localStorage.getItem("nmeHp"));  
     function getRandomArbitrary(min, max) {
       return Math.random() * (max - min) + min;
     }
@@ -17,8 +19,8 @@
     }
     function setUp()
     {
-      const charHp = localStorage.getItem("charHp");
-      const nmeHp = parseFloat(localStorage.getItem("nmeHp"));
+      charHp = localStorage.getItem("charHp");
+      nmeHp = parseFloat(localStorage.getItem("nmeHp"));
       const nme = document.getElementById("nme");
       const char = document.getElementById("char");
       const fid = readId();
@@ -39,7 +41,12 @@
     }
     function FightButton()
     {
-      console.log(math.floor(getRandomArbitrary(1, 11)));
+      var roll = getRandomArbitrary(1, 11);
+      var chanceRoll = math.floor(roll);
+      if (chanceRoll === 1)
+      {
+
+      }
     }
   </script>
 </head>
