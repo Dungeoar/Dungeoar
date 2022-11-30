@@ -29,3 +29,15 @@
     left: 30%;
     top: 80%
 }
+
+#lifeBarNme {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+#lifeBarChar {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+}
