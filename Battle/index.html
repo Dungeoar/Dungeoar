@@ -22,7 +22,7 @@
     function setUp()
     {
       charHp = localStorage.getItem("charHp");
-      nmeHp = parseFloat(localStorage.getItem("nmeHp"));
+      nmeHp = localStorage.getItem("nmeHp");
       const nme = document.getElementById("nme");
       const char = document.getElementById("char");
       const fid = readId();
@@ -30,10 +30,12 @@
       const charID = fid + "/" + fid + "-char.png";
       const bgID = fid + "/" + fid + "-BG.png";
       const charHpID = charHp + "hp-trimmy.jpg"
+      const nmeHpID = nmeHp + "hp-trimmyjpg"
       nme.src = nmeID
       char.src = charID;
       document.body.style.backgroundImage = "url(" + bgID + ")";
       document.getElementById("lifeBarChar").src = charHpID;
+      document.getElementById("lifeBarNme")
     }
     function RunButton()
     {
@@ -83,7 +85,8 @@
 </head>
 <body onload="setUp()">
   <div id="charDiv"><img id="char"/></div>
-  <div id="life" class="char"><img id="lifeBarChar" class="char"></div>
+  <div id="life" class="nme"><img id="lifeBarNme" class="nme"></div>
+  <div id="life" class="nme"><img id="lifeBarChar"/></div>
   <div id="nmeDiv"><img id="nme"/></div>
   <div id="button">
     <div id="fight">
@@ -98,6 +101,5 @@
     </div>
   </div>
   <div>
-    <img id="missed"/>
   </div>
 </body>
