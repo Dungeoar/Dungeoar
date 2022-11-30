@@ -72,6 +72,10 @@
         charHp--;
         console.log(charHp);
         document.getElementById("lifeBarChar").src = charHp + "hp-trimmy.jpg"
+        if(charHp === 0)
+        {
+          RunButton();
+        }
       }
       fightButton.disabled = false;
     }
