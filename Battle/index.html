@@ -35,7 +35,7 @@
       char.src = charID;
       document.body.style.backgroundImage = "url(" + bgID + ")";
       document.getElementById("lifeBarChar").src = charHpID;
-      document.getElementById("lifeBarNme")
+      document.getElementById("lifeBarNme").src = nmeHpID;
     }
     function RunButton()
     {
@@ -48,7 +48,7 @@
       const fightButton = document.getElementById("FightButton");
       fightButton.disabled = true;
       var roll = getRandomArbitrary(1, 11);
-      var roll2 = getRandomArbitrary(1, 11);
+      var roll2 = getRandomArbitrary(1, 2);
       var chanceRoll = Math.floor(roll);
       var chanceRoll2 = Math.floor(roll2);
       console.log(chanceRoll);
