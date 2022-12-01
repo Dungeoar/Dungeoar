@@ -8,7 +8,7 @@
       <script>
         let x = localStorage.getItem('xpos');
         let y = localStorage.getItem('ypos');
-        var test = true;
+        var isMonsterDead = true;
         function setUp() {
           document.getElementById("img").style.left = parseFloat(x);
           document.getElementById("img").style.top = parseFloat(y);
@@ -17,6 +17,7 @@
             document.getElementById("nme1").remove();
             document.getElementById("imgBeta").src = "Key-trimmy.png" 
             localStorage.removeItem('3tv8fhwin');
+            isMonsterDead = true;
           }
         }
       </script>
@@ -27,7 +28,6 @@
         <div><img id="imgBeta"/></div>
         <script type="text/javascript">
             (function() {
-                console.log(test);
                 function DOMelementOverlapCheck(div1, div2) {
                 const domRect1 = div1.getBoundingClientRect();
                 const domRect2 = div2.getBoundingClientRect();
@@ -48,7 +48,7 @@
                   case 37:
                     xAxis -= moveSpeed;
                     div.style.left = xAxis + 'px';
-                    if(DOMelementOverlapCheck(nmeDiv, div) === true)
+                    if(DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false)
                     {
                       self.location="https://minikielbym.github.io/WebGame/Battle/?id=3tv8fh";
                       localStorage.setItem("charHp", "3");
@@ -58,7 +58,7 @@
                   case 38:
                     yAxis -= moveSpeed;
                     div.style.top = yAxis + 'px';
-                    if(DOMelementOverlapCheck(nmeDiv, div) === true)
+                    if(DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false)
                     {
                       self.location="https://minikielbym.github.io/WebGame/Battle/?id=3tv8fh";
                       localStorage.setItem("charHp", "3");
@@ -68,7 +68,7 @@
                   case 39:
                     xAxis += moveSpeed;
                     div.style.left = xAxis + 'px';
-                    if(DOMelementOverlapCheck(nmeDiv, div) === true)
+                    if(DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false)
                     {
                       self.location="https://minikielbym.github.io/WebGame/Battle/?id=3tv8fh";
                       localStorage.setItem("charHp", "3");
@@ -78,7 +78,7 @@
                   case 40: 
                     yAxis += moveSpeed;
                     div.style.top = yAxis + 'px';
-                    if(DOMelementOverlapCheck(nmeDiv, div) === true)
+                    if(DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false)
                     {
                       self.location="https://minikielbym.github.io/WebGame/Battle/?id=3tv8fh";
                       localStorage.setItem("charHp", "3");
