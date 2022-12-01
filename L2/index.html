@@ -7,13 +7,13 @@
 
       <script>
         let x = localStorage.getItem('xpos');
-        let y = localStorage.getItem('ypos')
+        let y = localStorage.getItem('ypos');
         function setUp() {
           document.getElementById("img").style.left = parseFloat(x);
           document.getElementById("img").style.top = parseFloat(y);
           if(localStorage.getItem("3tv8fhwin") === "true")
           {
-            document.getElementById("nme").remove();
+            document.getElementById("nme1").remove();
             localStorage.removeItem('3tv8fhwin');
           }
         }
