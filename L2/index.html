@@ -14,6 +14,8 @@
           if(localStorage.getItem("3tv8fhwin") === "true")
           {
             document.getElementById("nme1").remove();
+            const image = document.createElement('img');
+            image.setAttribute('src', 'Key-trimmy.png');
             localStorage.removeItem('3tv8fhwin');
           }
         }
