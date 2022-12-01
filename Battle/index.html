@@ -8,6 +8,7 @@
   <script>
     var charHp = localStorage.getItem("charHp");
     var nmeHp = localStorage.getItem("nmeHp");  
+    var monsterDefeated = false;
     function getRandomArbitrary(min, max) 
     {
       return Math.random() * (max - min) + min;
@@ -18,6 +19,10 @@
       let QueryString = new URLSearchParams(Query);
       var QueryVal = QueryString.get('id')   
       return QueryVal;
+    }
+    function defineWinId()
+    {
+      return readId() + "win";
     }
     function setUp()
     {
@@ -41,6 +46,10 @@
     {
       localStorage.setItem("xpos", "730");
       localStorage.setItem("ypos", "400");
+      if(monsterDefeated === true)
+      {
+        localStorage.setItem(defineWinId(), "true")
+      }
       self.location = document.referrer;
     }
     function FightButton()
@@ -63,6 +72,7 @@
         console.log(nmeHp);
         if(nmeHp === 0)
         {
+          monsterDefeated = true;
           RunButton();
         }
       }

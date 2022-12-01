@@ -8,13 +8,17 @@
       <script>
         let x = localStorage.getItem('xpos');
         let y = localStorage.getItem('ypos')
-        function setXY() {
+        function setUp() {
           document.getElementById("img").style.left = parseFloat(x);
           document.getElementById("img").style.top = parseFloat(y);
+          if(localStorage.getItem("3tv8fh") === "true")
+          {
+            document.getElementById("nme1").style.display='none';
+          }
         }
       </script>
     </head>
-    <body class = "l2" onload="setXY();">
+    <body class = "l2" onload="setUp();">
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
         <div id = "nme1"><img src="3tv8fh-nme.png" id="nme"/></div>
         <script type="text/javascript">
