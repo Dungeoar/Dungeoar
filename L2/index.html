@@ -14,8 +14,7 @@
           if(localStorage.getItem("3tv8fhwin") === "true")
           {
             document.getElementById("nme1").remove();
-            const image = document.createElement('img');
-            image.setAttribute('src', 'Key-trimmy.png');
+            document.getElementById("imgBeta").src = "Key-trimmy.png" 
             localStorage.removeItem('3tv8fhwin');
           }
         }
@@ -24,6 +23,7 @@
     <body class = "l2" onload="setUp();">
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
         <div id = "nme1"><img src="3tv8fh-nme.png" id="nme"/></div>
+        <div><img id="imgBeta"/></div>
         <script type="text/javascript">
             (function() {
               function DOMelementOverlapCheck(div1, div2) {
@@ -86,6 +86,6 @@
                 }
               };
             })();
-          </script>
+        </script>
     </body>
 </html>
