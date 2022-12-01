@@ -8,6 +8,7 @@
       <script>
         let x = localStorage.getItem('xpos');
         let y = localStorage.getItem('ypos');
+        var test = true;
         function setUp() {
           document.getElementById("img").style.left = parseFloat(x);
           document.getElementById("img").style.top = parseFloat(y);
@@ -26,7 +27,8 @@
         <div><img id="imgBeta"/></div>
         <script type="text/javascript">
             (function() {
-              function DOMelementOverlapCheck(div1, div2) {
+                console.log(test);
+                function DOMelementOverlapCheck(div1, div2) {
                 const domRect1 = div1.getBoundingClientRect();
                 const domRect2 = div2.getBoundingClientRect();
                 return !(
