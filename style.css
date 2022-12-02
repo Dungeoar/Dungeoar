@@ -1,15 +1,11 @@
-#img {
-  left: 50px;
-  top: 10px;
-  position: absolute;
-}
-
 body.l1 {
   height: 100%;
-  overflow: hidden;
-  background-image: url("bg.png")  
+  overflow: shown;
+  background-image: url("bg.00.png");  
 }
-
+img {
+position:relative;
+}
 #sword {
   left: 50%;
   top: 50%;
