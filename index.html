@@ -8,7 +8,7 @@
 </head>
 <body class = "l1">
     <div id="img"><img src="char__3_-removebg-preview (1).png" id="imgEl"/></div>
-    <div id="sword"><img src="swordItem (1).png" id="swordImg"/></div>
+    <div id="sword"><div id="hitbox_sword" style="position: relative;bottom: 63px;right:15px;width:27.5px;height: 58.5px;"><img src="swordItem (1).png" id="swordImg"/></div></div>
 <script type="text/javascript">
 (function() {
 localStorage.removeItem('3tv8fhwin');
@@ -28,7 +28,7 @@ function DOMelementOverlapCheck(div1, div2) {
 //assorted functions code end
 
 //assorted variable defenitions code begin
-const SwordCollect = document.getElementById("sword")
+const SwordCollect = document.getElementById("hitbox_sword")
 const Portal = document.getElementById("LevelTransfer");
 var SwordCollectCollected = false
 var wait1 = false;
