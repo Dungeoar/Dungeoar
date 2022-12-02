@@ -47,7 +47,7 @@ console.last = function() {
        }
        // looooooop
       loop(cf);
-  }, 350))
+  }, 500))
 };
  this.cancel = function cancel() {
      clearTimeout(console.last())
@@ -61,21 +61,7 @@ class bg {
         this.frames = arrayBG
         var cf2 = 0
         this.ANIM = function loop2(cf2) {
-            if (_log == undefined) {
-var _log = console.log;
-console.log = function () {
-    // turn arguments into an array and store it
-    this._last = [].slice.call(arguments);
-
-    // call the original function
-    _log.apply(console, arguments);
-};
-
-console.last = function() {
-    return this._last;
-};
-}
-
+        
    setTimeout(() => {
        body.style.backgroundImage = "url(" + arrayBG.at(cf2) + ")"
        if (cf2 == 3) {
