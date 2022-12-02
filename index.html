@@ -6,7 +6,7 @@
   <title>RPG Webgame Testing</title>
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body class = "l1">
+<body class = "l1" id="body">
 <div id="img" style="height:64px;width:64px;position:relative">
     <img id="imgEl" src="https://callmeclover.github.io/WebGame-anim-dev/player/player.02.png" style="height:64px;width:64px;">
 </div>
@@ -14,13 +14,14 @@
 
 <script type="text/javascript">
 (function() {
+var cf = 0
 // player
 const char = document.getElementById('imgEl')
+const body = document.getElementById('body')
 class player {
     constructor() {
         var array = ['https://callmeclover.github.io/WebGame-anim-dev/player/player.00.png', 'https://callmeclover.github.io/WebGame-anim-dev/player/player.01.png', 'https://callmeclover.github.io/WebGame-anim-dev/player/player.02.png', 'https://callmeclover.github.io/WebGame-anim-dev/player/player.03.png'];
         this.frames = array
-        var cf = 0
         this.ANIM = function loop(cf) {
             if (_log == undefined) {
 var _log = console.log;
@@ -48,12 +49,53 @@ console.last = function() {
       loop(cf);
   }, 350))
 };
-        this.ID = this.ANIM(cf)
  this.cancel = function cancel() {
      clearTimeout(console.last())
  }
     }
 }
+
+class bg {
+    constructor() {
+        var arrayBG = ['https://github.com/callmeclover/WebGame-anim-dev/blob/main/bg.0.png?raw=true', 'https://github.com/callmeclover/WebGame-anim-dev/blob/main/bg.1.png?raw=true', 'https://github.com/callmeclover/WebGame-anim-dev/blob/main/bg.2.png?raw=true', 'https://github.com/callmeclover/WebGame-anim-dev/blob/main/bg.3.png?raw=true'];
+        this.frames = arrayBG
+        var cf2 = 0
+        this.ANIM = function loop2(cf2) {
+            if (_log == undefined) {
+var _log = console.log;
+console.log = function () {
+    // turn arguments into an array and store it
+    this._last = [].slice.call(arguments);
+
+    // call the original function
+    _log.apply(console, arguments);
+};
+
+console.last = function() {
+    return this._last;
+};
+}
+
+   console.log(setTimeout(() => {
+       body.style.backgroundImage = "url(" + arrayBG.at(cf2) + ")"
+       if (cf2 == 3) {
+           cf2 = 0
+       } else {
+            cf2 = cf2 + 1
+       }
+       // looooooop
+      loop2(cf2);
+  }, 750))
+};
+        this.ID = this.ANIM(cf2)
+ this.cancel = function cancel() {
+     clearTimeout(console.last())
+ }
+    }
+}
+
+var backg = new bg()
+
 const playr = new player()
 
 //assorted functions code begin
@@ -122,6 +164,7 @@ document.onkeydown = function(event) {
     case 37:
       if(!SwordCollectCollected)
       {
+        playr.ANIM(cf)
         xAxis -= moveSpeed;
         div.style.left = xAxis + 'px';
       }
@@ -149,6 +192,7 @@ document.onkeydown = function(event) {
     case 38:
       if(!SwordCollectCollected)
       {
+              playr.ANIM(cf)
         yAxis -= moveSpeed;
         div.style.top = yAxis + 'px';
       }
@@ -176,6 +220,7 @@ document.onkeydown = function(event) {
     case 39:
       if(!SwordCollectCollected)
       {      
+        playr.ANIM(cf)
         xAxis += moveSpeed;
         div.style.left = xAxis + 'px';
       }
@@ -203,6 +248,7 @@ document.onkeydown = function(event) {
     case 40:
       if(!SwordCollectCollected)
       {
+        playr.ANIM(cf)
       yAxis += moveSpeed;
       div.style.top = yAxis + 'px';
       }
