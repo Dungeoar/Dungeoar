@@ -15,3 +15,9 @@ body.l2 {
   width: 80%;
   height: 80%;
 }
+
+#imgBeta {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+}
