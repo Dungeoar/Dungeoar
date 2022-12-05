@@ -8,11 +8,11 @@
       <script>
         let x = localStorage.getItem('xpos');
         let y = localStorage.getItem('ypos');
-        var isMonsterDead = false;
+        var isMonsterDead = true;
         function setUp() {
           document.getElementById("img").style.left = parseFloat(x);
           document.getElementById("img").style.top = parseFloat(y);
-          if(localStorage.getItem("3tv8fhwin") === "true")
+          if(localStorage.getItem("3tv8fhwin") === "true" || isMonsterDead === true)
           {
             document.getElementById("nme1").remove();
             document.getElementById("imgBeta").src = "Key-trimmy.png" 
@@ -23,9 +23,9 @@
       </script>
     </head>
     <body class = "l2" onload="setUp();">
+        <div><img id="imgBeta"/></div>
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
         <div id = "nme1"><img src="3tv8fh-nme.png" id="nme"/></div>
-        <div><img id="imgBeta"/></div>
         <script type="text/javascript">
             (function() {
                 function DOMelementOverlapCheck(div1, div2) {
@@ -53,7 +53,11 @@
                       self.location="https://minikielbym.github.io/WebGame/Battle/?id=3tv8fh";
                       localStorage.setItem("charHp", "3");
                       localStorage.setItem("nmeHp", "3");
-                    }
+                    } 
+                    else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
+                    {
+                      document.getElementById("imgBeta").style.visibility = 'hidden';
+                    } 
                     break;
                   case 38:
                     yAxis -= moveSpeed;
@@ -63,6 +67,10 @@
                       self.location="https://minikielbym.github.io/WebGame/Battle/?id=3tv8fh";
                       localStorage.setItem("charHp", "3");
                       localStorage.setItem("nmeHp", "3");
+                    } 
+                    else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
+                    {
+                      document.getElementById("imgBeta").style.visibility = 'hidden';
                     }
                     break;
                   case 39:
@@ -73,6 +81,10 @@
                       self.location="https://minikielbym.github.io/WebGame/Battle/?id=3tv8fh";
                       localStorage.setItem("charHp", "3");
                       localStorage.setItem("nmeHp", "3");
+                    } 
+                    else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
+                    {
+                      document.getElementById("imgBeta").style.visibility = 'hidden';
                     }
                     break;
                   case 40: 
@@ -83,6 +95,10 @@
                       self.location="https://minikielbym.github.io/WebGame/Battle/?id=3tv8fh";
                       localStorage.setItem("charHp", "3");
                       localStorage.setItem("nmeHp", "3");
+                    } 
+                    else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
+                    {
+                      document.getElementById("imgBeta").style.visibility = 'hidden';
                     }
                    break;
                 }
