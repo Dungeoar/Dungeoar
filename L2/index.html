@@ -12,6 +12,7 @@
           document.getElementById("img").style.left = parseFloat(x);
           document.getElementById("img").style.top = parseFloat(y);
           if(sessionStorage.getItem("3tv8fhwin") === "true")
+          if(localStorage.getItem("3tv8fhwin") === "true" || isMonsterDead === true)
           {
             document.getElementById("nme1").remove();
             document.getElementById("imgBeta").src = "Key-trimmy.png" 
@@ -27,6 +28,9 @@
         <div><img id="imgBeta"/></div>
         <div id="door"><img id="doorimg" src="door.png"></div>
         <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
+        <div><img id="imgBeta"/></div>
+        <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
+        <div id = "nme1"><img src="3tv8fh-nme.png" id="nme"/></div>
         <script type="text/javascript">
             (function() {
                 function DOMelementOverlapCheck(div1, div2) {
@@ -55,6 +59,9 @@
                       sessionStorage.setItem("charHp", "3");
                       sessionStorage.setItem("nmeHp", "3");
                     }
+                      localStorage.setItem("charHp", "3");
+                      localStorage.setItem("nmeHp", "3");
+                    } 
                     else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
                     {
                       document.getElementById("imgBeta").style.visibility = 'hidden';
@@ -68,6 +75,12 @@
                       self.location="/Battle/?id=3tv8fh";
                       sessionStorage.setItem("charHp", "3");
                       sessionStorage.setItem("nmeHp", "3");
+                      localStorage.setItem("charHp", "3");
+                      localStorage.setItem("nmeHp", "3");
+                    } 
+                    else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
+                    {
+                      document.getElementById("imgBeta").style.visibility = 'hidden';
                     }
                     else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
                     {
@@ -82,6 +95,12 @@
                       self.location="/Battle/?id=3tv8fh";
                       sessionStorage.setItem("charHp", "3");
                       sessionStorage.setItem("nmeHp", "3");
+                      localStorage.setItem("charHp", "3");
+                      localStorage.setItem("nmeHp", "3");
+                    } 
+                    else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
+                    {
+                      document.getElementById("imgBeta").style.visibility = 'hidden';
                     }
                     else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
                     {
@@ -96,6 +115,12 @@
                       self.location="/Battle/?id=3tv8fh";
                       sessionStorage.setItem("charHp", "3");
                       sessionStorage.setItem("nmeHp", "3");
+                      localStorage.setItem("charHp", "3");
+                      localStorage.setItem("nmeHp", "3");
+                    } 
+                    else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
+                    {
+                      document.getElementById("imgBeta").style.visibility = 'hidden';
                     }
                     else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
                     {
