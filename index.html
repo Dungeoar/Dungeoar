@@ -11,7 +11,7 @@
     <div id="sword"><div id="hitbox_sword" style="position: relative;bottom: 63px;right:15px;width:27.5px;height: 58.5px;"><img src="swordItem (1).png" id="swordImg"/></div></div>
     <script type="text/javascript">
 (function() {
-localStorage.removeItem('3tv8fhwin');
+sessionStorage.removeItem('3tv8fhwin');
 //assorted functions code begin
 function DOMelementOverlapCheck(div1, div2) {
   const domRect1 = div1.getBoundingClientRect();
@@ -34,6 +34,12 @@ var SwordCollectCollected = false
 var wait1 = false;
 var wait2 = false;
 var wait3 = false;
+var inventory = new Array(21);
+var inventoryCounter = 0;
+while (inventoryCounter < 21)
+{
+  JSON.parse(sessionStorage.getItem("inventory"))
+}
 //assorted variable defenitions code end
 
 //player movement code begin
@@ -62,8 +68,8 @@ document.onkeydown = function(event) {
           function LoadLv2() 
           {
             self.location="L2";
-            localStorage.setItem("xpos", xAxis);
-            localStorage.setItem("ypos", "350");
+            sessionStorage.setItem("xpos", xAxis);
+            sessionStorage.setItem("ypos", "350");
           }
           setTimeout(LoadLv2, 1500);
         }
@@ -89,8 +95,8 @@ document.onkeydown = function(event) {
           function LoadLv2() 
           { 
             self.location="L2";
-            localStorage.setItem("xpos", xAxis);
-            localStorage.setItem("ypos", "350");
+            sessionStorage.setItem("xpos", xAxis);
+            sessionStorage.setItem("ypos", "350");
           }
           setTimeout(LoadLv2, 1500);
         }
@@ -116,8 +122,8 @@ document.onkeydown = function(event) {
           function LoadLv2() 
           { 
             self.location="L2";
-            localStorage.setItem("xpos", xAxis);
-            localStorage.setItem("ypos", "350");
+            sessionStorage.setItem("xpos", xAxis);
+            sessionStorage.setItem("ypos", "350");
           }
           setTimeout(LoadLv2, 1500);
         }
@@ -143,8 +149,8 @@ document.onkeydown = function(event) {
           function LoadLv2() 
           { 
             self.location="L2";
-            localStorage.setItem("xpos", xAxis);
-            localStorage.setItem("ypos", "350");
+            sessionStorage.setItem("xpos", xAxis);
+            sessionStorage.setItem("ypos", "350");
           }
           setTimeout(LoadLv2, 1500);
         }
