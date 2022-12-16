@@ -1,6 +1,6 @@
 <p align="right">12/16/2022</p>
 <p align="center">
-<img style="align:center;" width="400" "alt="Oops! This image failed to load!" src="title.png">
+<img style="align:center;" "alt="Oops! This image failed to load!" src="titleBig.png">
 </p>
 
 ---
