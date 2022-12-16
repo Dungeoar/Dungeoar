@@ -1,32 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" />
-<<<<<<< MinikielbyM-codespace-merge
   <link href="style.css" rel="stylesheet" type="text/css">
-  <script>
-    var inventoryArray = [];
-    function setArrayClear() {
-      var inventoryClearCounter = 0;
-      while (inventoryClearCounter < 21) {
-        if (inventoryArray[inventoryClearCounter] === undefined) {
-          inventoryArray[inventoryClearCounter] = "0"
-        }
-        inventoryClearCounter++;
-        sessionStorage.setItem("inventory", JSON.stringify(inventoryArray));
-      }
-    }
-    function getArray() {
-      return (JSON.parse(sessionStorage.getItem("inventory")));
-
-    }
-    function addToInventory(number, value) {
-      inventoryArray[number] = value;
-    }
-  </script>
-
-<body class="l1" onload="setArrayClear()">
+</head>
+<body class="l1">
   <div id="img"><img src="char__3_-removebg-preview (1).png" id="imgEl" /></div>
   <div id="sword">
     <div id="hitbox_sword" style="position: relative;bottom: 63px;width:27.5px;height: 58.5px;"><img src="sword.png"
@@ -111,8 +91,8 @@
       const invContainer = document.getElementById('invContainer')
       var invOpen = false;
       var inventoryArray = new Array;
-        localStorage.setItem("enabled", "true")
-//assorted variable defenitions code end
+      localStorage.setItem("enabled", "true")
+      //assorted variable defenitions code end
 
       //player movement code begin
       var xAxis = 50;
@@ -167,7 +147,7 @@
                 div.style.visibility = 'hidden';
                 function LoadLv2() {
                   sessionStorage.setItem("inventoryArray", JSON.stringify(inventoryArray))
-                  self.location = "L2";
+                  self.location = "/L2/";
                   sessionStorage.setItem("xpos", xAxis);
                   sessionStorage.setItem("ypos", "350");
                 }
@@ -193,7 +173,7 @@
                 div.style.visibility = 'hidden';
                 function LoadLv2() {
                   sessionStorage.setItem("inventoryArray", JSON.stringify(inventoryArray))
-                  self.location = "L2";
+                  self.location = "/L2/";
                   sessionStorage.setItem("xpos", xAxis);
                   sessionStorage.setItem("ypos", "350");
                 }
@@ -220,7 +200,7 @@
                 div.style.visibility = 'hidden';
                 function LoadLv2() {
                   sessionStorage.setItem("inventoryArray", JSON.stringify(inventoryArray))
-                  self.location = "L2";
+                  self.location = "/L2/";
                   sessionStorage.setItem("xpos", xAxis);
                   sessionStorage.setItem("ypos", "350");
                 }
@@ -247,7 +227,7 @@
                 div.style.visibility = 'hidden';
                 function LoadLv2() {
                   sessionStorage.setItem("inventoryArray", JSON.stringify(inventoryArray))
-                  self.location = "L2";
+                  self.location = "/L2/";
                   sessionStorage.setItem("xpos", xAxis);
                   sessionStorage.setItem("ypos", "350");
                 }
@@ -262,3 +242,6 @@
       //player movement code end
     })();
   </script>
+</body>
+
+</html>

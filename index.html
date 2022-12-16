@@ -7,82 +7,86 @@
   <title>Dungeoar</title>
   <style>
     button {
-    background-color: #eee;
-    border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-    color: #333;
-    display: inline-block;
-    font-size: .85em;
-    font-weight: 700;
-    line-height: 1;
-    padding: 2px 4px;
-    white-space: nowrap;
-    font-family: monospace;
-   }
-
+      background-color: #eee;
+      border-radius: 3px;
+      border: 1px solid #b4b4b4;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+      color: #333;
+      display: inline-block;
+      font-size: .85em;
+      font-weight: 700;
+      line-height: 1;
+      padding: 2px 4px;
+      white-space: nowrap;
+      font-family: monospace;
+    }
   </style>
-  </head>
+</head>
+
 <body id="body" style="text-align: center;">
-    <img src="title.png" id="title"/>
-    <br>
-    <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <p>Press <button>Enter</button> to start.</p>
-    <div id="preloaded_resc">
+  <a id="MichaelFlair" href="https://stackoverflow.com/users/20351242/michael-kielbasinski"><img
+      src="https://stackoverflow.com/users/flair/20351242.png?theme=dark" width="208" height="58"
+      alt="profile for Michael Kielbasinski at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
+      title="profile for Michael Kielbasinski at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+  <img src="title.png" id="title" />
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>Press <button>Enter</button> to start.</p>
+  <div id="preloaded_resc">
     <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.0.png?raw=true" hidden>
     <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.1.png?raw=true" hidden>
     <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.2.png?raw=true" hidden>
     <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.3.png?raw=true" hidden>
   </div>
- <script>
-  const title = document.getElementById('title')
-  const body = document.getElementById('body')
+  <script>
+    const title = document.getElementById('title')
+    const body = document.getElementById('body')
 
-  title.animate([
-    {
+    title.animate([
+      {
         transform: 'translate(0px, 75px)'
-    }
-], 
-          {duration: 2000, easing: 'ease-in-out', iterations: Infinity, direction: 'alternate'}
-         )
+      }
+    ],
+      { duration: 2000, easing: 'ease-in-out', iterations: Infinity, direction: 'alternate' }
+    )
 
-         class bg {
-    constructor() {
+    class bg {
+      constructor() {
         var arrayBG = ['bg.0.png', 'bg.1.png', 'bg.2.png', 'bg.3.png'];
         this.frames = arrayBG
         var cf2 = 0
         this.ANIM = function loop2(cf2) {
-        
-   setTimeout(() => {
-       body.style.backgroundImage = "url(" + arrayBG.at(cf2) + ")"
-       if (cf2 == 3) {
-           cf2 = 0
-       } else {
-            cf2 = cf2 + 1
-       }
-       // looooooop
-      loop2(cf2);
-  }, 750)
-};
-this.id = this.ANIM(cf2)
+
+          setTimeout(() => {
+            body.style.backgroundImage = "url(" + arrayBG.at(cf2) + ")"
+            if (cf2 == 3) {
+              cf2 = 0
+            } else {
+              cf2 = cf2 + 1
+            }
+            // looooooop
+            loop2(cf2);
+          }, 750)
+        };
+        this.id = this.ANIM(cf2)
+      }
     }
-}
 
-new bg()
+    new bg()
 
-document.onkeydown = function() {
-  switch (key) {
-    case 'Enter':
-      window.location = "Dungeoar.github.io/L1.html"
-      break;
-  }
-}
- </script>
+    document.onkeydown = function (event) {
+      switch (event.key) {
+        case 'Enter':
+          window.location = "/L1/"
+          break;
+      }
+    }
+  </script>
 </body>
 
 </html>
