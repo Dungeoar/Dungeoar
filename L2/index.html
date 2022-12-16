@@ -4,28 +4,28 @@
       <meta name="viewport" content="width=device-width" />
       <title>RPG Webgame Testing</title>
       <link href="l2Style.css" rel="stylesheet" type="text/css">
-
       <script>
-        let x = localStorage.getItem('xpos');
-        let y = localStorage.getItem('ypos');
+        let x = sessionStorage.getItem('xpos');
+        let y = sessionStorage.getItem('ypos') - 30;   
         var isMonsterDead = false;
         function setUp() {
           document.getElementById("img").style.left = parseFloat(x);
           document.getElementById("img").style.top = parseFloat(y);
-          if(localStorage.getItem("3tv8fhwin") === "true" || isMonsterDead === true)
+          if(sessionStorage.getItem("3tv8fhwin") === "true")
           {
             document.getElementById("nme1").remove();
             document.getElementById("imgBeta").src = "Key-trimmy.png" 
-            localStorage.removeItem('3tv8fhwin');
-            isMonsterDead = true;
+            isMonsterDead = true;   
           }
         }
       </script>
     </head>
     <body class = "l2" onload="setUp();">
-        <div><img id="imgBeta"/></div>
-        <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
+    
         <div id = "nme1"><img src="3tv8fh-nme.png" id="nme"/></div>
+        <div><img id="imgBeta"/></div>
+        <div id="door"><img id="doorimg" src="door.png"></div>
+        <div id="img"><img src="char (4) (2).png" id="imgEl"/></div>
         <script type="text/javascript">
             (function() {
                 function DOMelementOverlapCheck(div1, div2) {
@@ -51,9 +51,9 @@
                     if(DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false)
                     {
                       self.location="/Battle/?id=3tv8fh";
-                      localStorage.setItem("charHp", "3");
-                      localStorage.setItem("nmeHp", "3");
-                    } 
+                      sessionStorage.setItem("charHp", "3");
+                      sessionStorage.setItem("nmeHp", "3");
+                    }
                     else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
                     {
                       document.getElementById("imgBeta").style.visibility = 'hidden';
@@ -65,13 +65,13 @@
                     if(DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false)
                     {
                       self.location="/Battle/?id=3tv8fh";
-                      localStorage.setItem("charHp", "3");
-                      localStorage.setItem("nmeHp", "3");
-                    } 
+                      sessionStorage.setItem("charHp", "3");
+                      sessionStorage.setItem("nmeHp", "3");
+                    }
                     else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
                     {
                       document.getElementById("imgBeta").style.visibility = 'hidden';
-                    }
+                    } 
                     break;
                   case 39:
                     xAxis += moveSpeed;
@@ -79,13 +79,13 @@
                     if(DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false)
                     {
                       self.location="/Battle/?id=3tv8fh";
-                      localStorage.setItem("charHp", "3");
-                      localStorage.setItem("nmeHp", "3");
-                    } 
+                      sessionStorage.setItem("charHp", "3");
+                      sessionStorage.setItem("nmeHp", "3");
+                    }
                     else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
                     {
                       document.getElementById("imgBeta").style.visibility = 'hidden';
-                    }
+                    } 
                     break;
                   case 40: 
                     yAxis += moveSpeed;
@@ -93,14 +93,21 @@
                     if(DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false)
                     {
                       self.location="/Battle/?id=3tv8fh";
-                      localStorage.setItem("charHp", "3");
-                      localStorage.setItem("nmeHp", "3");
-                    } 
+                      sessionStorage.setItem("charHp", "3");
+                      sessionStorage.setItem("nmeHp", "3");
+                    }
                     else if(DOMelementOverlapCheck(document.getElementById("imgBeta"), div))
                     {
                       document.getElementById("imgBeta").style.visibility = 'hidden';
-                    }
+                    } 
                    break;
+                  case 17:
+                    if(isMonsterDead === true)
+                    {
+                      sessionStorage.setItem("3tv8fhwin", "true");
+                    }
+                    location.self()
+                    break;
                 }
               };
             })();

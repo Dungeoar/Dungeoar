@@ -7,7 +7,7 @@
 body.l1 {
   height: 100%;
   overflow: hidden;
-  background-image: url("bg.png")  
+  background-image: url("bg.png")
 }
 
 #sword {
@@ -29,3 +29,9 @@ body.l1 {
   height: 80%;
 }
 
+#invWeapon {
+  background-color: rgba(20, 20, 20, 0.75);
+  background-repeat:no-repeat;
+  background-size:47%;
+  background-position: center;
+}

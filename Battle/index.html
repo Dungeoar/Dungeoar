@@ -6,8 +6,8 @@
   <title>RPG Webgame Testing</title>
   <link href="fightHTML.css" rel="stylesheet" type="text/css">
   <script>
-    var charHp = localStorage.getItem("charHp");
-    var nmeHp = localStorage.getItem("nmeHp");  
+    var charHp = sessionStorage.getItem("charHp");
+    var nmeHp = sessionStorage.getItem("nmeHp");  
     var monsterDefeated = false;
     function getRandomArbitrary(min, max) 
     {
@@ -26,8 +26,8 @@
     }
     function setUp()
     {
-      charHp = localStorage.getItem("charHp");
-      nmeHp = localStorage.getItem("nmeHp");
+      charHp = sessionStorage.getItem("charHp");
+      nmeHp = sessionStorage.getItem("nmeHp");
       const nme = document.getElementById("nme");
       const char = document.getElementById("char");
       const fid = readId();
@@ -44,11 +44,11 @@
     }
     function RunButton()
     {
-      localStorage.setItem("xpos", "730");
-      localStorage.setItem("ypos", "400");
+      sessionStorage.setItem("xpos", "730");
+      sessionStorage.setItem("ypos", "400");
       if(monsterDefeated === true)
       {
-        localStorage.setItem(defineWinId(), "true")
+        sessionStorage.setItem(defineWinId(), "true")
       }
       self.location = document.referrer;
     }
