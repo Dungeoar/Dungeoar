@@ -22,9 +22,8 @@
 
   </style>
   </head>
-<body>
+<body style="text-align: center;">
     <img src="title.png" id="title"/>
-    <div id="sword"><img src="swordItem (1).png" id="swordImg"/></div>
     <p>Press <button>Enter</button> to start.</p>
     <div id="preloaded_resc">
     <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.0.png?raw=true" hidden>
@@ -37,7 +36,7 @@
  
   title.animate([
     {
-        transform: 'translate(0px, 100px)'
+        transform: 'translate(0px, 75px)'
     }
 ], 
           {duration: 2000, easing: 'ease-in-out', iterations: Infinity, direction: 'alternate'}
@@ -64,6 +63,8 @@
 this.id = this.ANIM(cf2)
     }
 }
+
+new bg()
 
 document.onkeydown = function() {
   switch (key) {
