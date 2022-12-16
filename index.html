@@ -4,10 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" />
   <title>Dungeoar</title>
+  <style>
+    button {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+    font-family: monospace;
+   }
+
+  </style>
   </head>
 <body>
     <img src="title.png" id="title"/>
     <div id="sword"><img src="swordItem (1).png" id="swordImg"/></div>
+    <p>Press <button>Enter</button> to start.</p>
     <div id="preloaded_resc">
     <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.0.png?raw=true" hidden>
     <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.1.png?raw=true" hidden>
@@ -45,6 +63,14 @@
 };
 this.id = this.ANIM(cf2)
     }
+}
+
+document.onkeydown = function() {
+  switch (key) {
+    case 'Enter':
+      window.location = "Dungeoar.github.io/L1.html"
+      break;
+  }
 }
  </script>
 </body>
