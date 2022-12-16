@@ -3,66 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" />
-  <title>RPG Webgame Testing</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body class = "l1" id="body">
-<div id="img" style="height:64px;width:64px;position:relative">
-    <img id="imgEl" src="https://callmeclover.github.io/WebGame-anim-dev/player/player.02.png" style="height:64px;width:64px;">
-</div>
-    <div id="sword"><img src="swordItem (1).png" id="swordImg"/></div>
-  <div id="preloaded_resc">
-  <img src="bg.0.png" hidden>
-  <img src="bg.1.png" hidden>
-  <img src="bg.2.png" hidden>
-  <img src="bg.3.png" hidden>
-</div>
-<script type="text/javascript" defer>
-(function() {
-var cf = 0
-// player
-const char = document.getElementById('imgEl')
-const body = document.getElementById('body')
+  <title>Dungeoar</title>
+  <style>
+    button {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+    font-family: monospace;
+   }
 
-            if (console.last == undefined) {
-var _log = console.log;
-console.log = function () {
-    // turn arguments into an array and store it
-    this._last = [].slice.call(arguments);
+  </style>
+  </head>
+<body id="body" style="text-align: center;">
+    <img src="title.png" id="title"/>
+    <br>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <p>Press <button>Enter</button> to start.</p>
+    <div id="preloaded_resc">
+    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.0.png?raw=true" hidden>
+    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.1.png?raw=true" hidden>
+    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.2.png?raw=true" hidden>
+    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.3.png?raw=true" hidden>
+  </div>
+ <script>
+  const title = document.getElementById('title')
+  const body = document.getElementById('body')
 
-    // call the original function
-    _log.apply(console, arguments);
-}
-
-console.last = function() {
-    return this._last;
-}
-}
-
-class player {
-    constructor() {
-        var array = ['https://callmeclover.github.io/WebGame-anim-dev/player/player.00.png', 'https://callmeclover.github.io/WebGame-anim-dev/player/player.01.png', 'https://callmeclover.github.io/WebGame-anim-dev/player/player.02.png', 'https://callmeclover.github.io/WebGame-anim-dev/player/player.03.png'];
-        this.frames = array
-        this.ANIM = function loop(cf) {
-
-   console.log(setTimeout(() => {
-       char.src = array.at(cf)
-       if (cf == 3) {
-           cf = 0
-       } else {
-            cf = cf + 1
-       }
-       // looooooop
-      loop(cf);
-  }, 500))
-};
- this.cancel = function cancel() {
-     clearTimeout(console.last())
- }
+  title.animate([
+    {
+        transform: 'translate(0px, 75px)'
     }
-}
+], 
+          {duration: 2000, easing: 'ease-in-out', iterations: Infinity, direction: 'alternate'}
+         )
 
-class bg {
+         class bg {
     constructor() {
         var arrayBG = ['bg.0.png', 'bg.1.png', 'bg.2.png', 'bg.3.png'];
         this.frames = arrayBG
@@ -80,188 +68,19 @@ class bg {
       loop2(cf2);
   }, 750)
 };
-        this.ID = this.ANIM(cf2)
- this.cancel = function cancel() {
-     clearTimeout(console.last())
- }
+this.id = this.ANIM(cf2)
     }
 }
 
-var backg = new bg()
+new bg()
 
-const playr = new player()
-
-//assorted functions code begin
-function DOMelementOverlapCheck(div1, div2) {
-  const domRect1 = div1.getBoundingClientRect();
-  const domRect2 = div2.getBoundingClientRect();
-
-  return !(
-    domRect1.top > domRect2.bottom ||
-    domRect1.right < domRect2.left ||
-    domRect1.bottom < domRect2.top ||
-    domRect1.left > domRect2.right
-  );
-}
-
-//assorted functions code end
-
-//assorted variable defenitions code begin
-const SwordCollect = document.getElementById("sword")
-const Portal = document.getElementById("LevelTransfer");
-var SwordCollectCollected = false
-var wait1 = false;
-var wait2 = false;
-var wait3 = false;
-  localStorage.setItem("enabled", "true")
-//assorted variable defenitions code end
-
-//player movement code begin
-var xAxis = 50;
-var yAxis = 10;
-const moveSpeed = 10;
-const div = document.getElementById('img');
-
-// cancel animation
-document.onkeyup = function(event) {
-      if (localStorage.getItem('enabled') == "false") {
-      playr.cancel()
-      localStorage.setItem("enabled", "true")
-      }
-};
-
-// move
-document.onkeydown = function(event) {
-  switch (event.keyCode) {
-    case 37:
-      if (localStorage.getItem('enabled') == "true") {
-        playr.ANIM(0)
-        localStorage.setItem("enabled", "false")
-}
-      if(!SwordCollectCollected)
-      {
-        xAxis -= moveSpeed;
-        div.style.left = xAxis + 'px';
-      }
-      if (DOMelementOverlapCheck(SwordCollect, div) === true)
-      {
-        SwordCollectCollected = true;
-        document.getElementById("sword").style.display='none';
-        document.getElementById("imgEl").src="char (4) (2).png";
-      	console.log("DOM overlap detected");
-        function AnimPart1() 
-        {
-          document.body.style.backgroundImage = "url('blank.png')";
-          div.style.visibility= 'hidden';
-          function LoadLv2() 
-          {
-            self.location="L2";
-            localStorage.setItem("xpos", xAxis);
-            localStorage.setItem("ypos", "350");
-          }
-          setTimeout(LoadLv2, 1500);
-        }
-        setTimeout(AnimPart1, 2000);      
-      }
-    break;
-    case 38:
-      if (localStorage.getItem('enabled') == "true") {
-  playr.ANIM(0)
-      localStorage.setItem("enabled", "false")
-}
-      if(!SwordCollectCollected)
-      {
-        yAxis -= moveSpeed;
-        div.style.top = yAxis + 'px';
-      }
-      if (DOMelementOverlapCheck(SwordCollect, div) === true)
-      {
-        SwordCollectCollected = true;
-        document.getElementById("sword").style.display='none';
-        document.getElementById("imgEl").src="char (4) (2).png";
-      	console.log("DOM overlap detected");
-        function AnimPart1() 
-        {
-          document.body.style.backgroundImage = "url('blank.png')";
-          div.style.visibility= 'hidden';
-          function LoadLv2() 
-          { 
-            self.location="L2";
-            localStorage.setItem("xpos", xAxis);
-            localStorage.setItem("ypos", "350");
-          }
-          setTimeout(LoadLv2, 1500);
-        }
-        setTimeout(AnimPart1, 2000);
-      }
-    break;
-    case 39:
-      if (localStorage.getItem('enabled') == "true") {
-  playr.ANIM(0)
-      localStorage.setItem("enabled", "false")
-}
-      if(!SwordCollectCollected)
-      {      
-        xAxis += moveSpeed;
-        div.style.left = xAxis + 'px';
-      }
-      if (DOMelementOverlapCheck(SwordCollect, div) === true)
-      {
-        SwordCollectCollected = true;
-        document.getElementById("sword").style.display='none';
-        document.getElementById("imgEl").src="char (4) (2).png";
-      	console.log("DOM overlap detected");
-        function AnimPart1() 
-        {
-          document.body.style.backgroundImage = "url('blank.png')";
-          div.style.visibility= 'hidden';
-          function LoadLv2() 
-          { 
-            self.location="L2";
-            localStorage.setItem("xpos", xAxis);
-            localStorage.setItem("ypos", "350");
-          }
-          setTimeout(LoadLv2, 1500);
-        }
-        setTimeout(AnimPart1, 2000);
-      }
-    break;
-    case 40:
-      if (localStorage.getItem('enabled') == "true") {
-  playr.ANIM(0)
-      localStorage.setItem("enabled", "false")
-}
-      if(!SwordCollectCollected)
-      {
-      yAxis += moveSpeed;
-      div.style.top = yAxis + 'px';
-      }
-      if (DOMelementOverlapCheck(SwordCollect, div) === true)
-      {
-        SwordCollectCollected = true;
-        document.getElementById("sword").style.display='none';
-        document.getElementById("imgEl").src="char (4) (2).png";
-      	console.log("DOM overlap detected");
-        function AnimPart1() 
-        {
-          document.body.style.backgroundImage = "url('blank.png')";
-          div.style.visibility= 'hidden';
-          function LoadLv2() 
-          { 
-            self.location="L2";
-            localStorage.setItem("xpos", xAxis);
-            localStorage.setItem("ypos", "350");
-          }
-          setTimeout(LoadLv2, 1500);
-        }
-        setTimeout(AnimPart1, 2000);
-      }
-    break;
+document.onkeydown = function() {
+  switch (key) {
+    case 'Enter':
+      window.location = "Dungeoar.github.io/L1.html"
+      break;
   }
-
-};
-//player movement code end
-})();
-</script>
+}
+ </script>
 </body>
 </html>
