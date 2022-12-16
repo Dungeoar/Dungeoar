@@ -2,6 +2,12 @@
 <html>
 
 <head>
+  <div id="preloaded_resc">
+    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.0.png?raw=true" hidden>
+    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.1.png?raw=true" hidden>
+    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.2.png?raw=true" hidden>
+    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.3.png?raw=true" hidden>
+  </div>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" />
   <title>Dungeoar</title>
@@ -27,6 +33,9 @@
       width: 30%;
       height: 30%;
     }
+    body {
+      background-image: url("bg.1.png");  
+    }
   </style>
 </head>
 
@@ -44,12 +53,6 @@
   <br>
   <br>
   <h1>Press <button>Enter</button> to start.</h1>
-  <div id="preloaded_resc">
-    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.0.png?raw=true" hidden>
-    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.1.png?raw=true" hidden>
-    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.2.png?raw=true" hidden>
-    <img src="https://github.com/Dungeoar/Dungeoar/blob/main/bg.3.png?raw=true" hidden>
-  </div>
   <script>
     const title = document.getElementById('title')
     const body = document.getElementById('body')
