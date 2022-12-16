@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>RPG Webgame Testing</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script>
+    var inventory = new Array(21);
+    function nullifyInventory()
+    {
+      var nullCount = 0;
+      while(nullCount < 21)
+      {
+        if(inventory[nullCount] === null)
+        {
+          inventory[nullCount] = "0"
+        }
+        nullCount++;
+      }
+      sessionStorge.setItem("inventory", JSON.stringify(inventory));
+    }
+    function getInventory()
+    {
+      nullifyInventory();
+      var inventoryCounter = 0;
+      while (inventoryCounter < 21)
+      {
+        let invJSON = JSON.parse(sessionStorage.getItem("inventory"));
+        inventory[inventoryCounter] = invJSON.inventoryCounter;
+        console.log(inventory[inventoryCounter]);
+        inventoryCounter++;
+      }
+    }
+  </script>
+</head>
+<body class = "l1" onload="getInventory">
+    <div id="img"><img src="char__3_-removebg-preview (1).png" id="imgEl"/></div>
+    <div id="sword"><div id="hitbox_sword" style="position: relative;bottom: 63px;right:15px;width:27.5px;height: 58.5px;"><img src="swordItem (1).png" id="swordImg"/></div></div>
+    <script type="text/javascript">
+(function() {
+sessionStorage.removeItem('3tv8fhwin');
+//assorted functions code begin
+function DOMelementOverlapCheck(div1, div2) {
+  const domRect1 = div1.getBoundingClientRect();
+  const domRect2 = div2.getBoundingClientRect();
+
+  return !(
+    domRect1.top > domRect2.bottom ||
+    domRect1.right < domRect2.left ||
+    domRect1.bottom < domRect2.top |
+    domRect1.left > domRect2.right
+  );
+}
+
+//assorted functions
+
+//assorted variable defenitions code begin
+const SwordCollect = document.getElementById("hitbox_sword")
+const Portal = document.getElementById("LevelTransfer");
+var SwordCollectCollected = false
+var wait1 = false;
+var wait2 = false;
+var wait3 = false;
+//assorted variable defenitions code end
+
+//player movement code begin
+var xAxis = 50;
+var yAxis = 10;
+const moveSpeed = 10;
+const div = document.getElementById('img');
+document.onkeydown = function(event) {
+  switch (event.keyCode) {
+    case 37:
+      if(!SwordCollectCollected)
+      {
+        xAxis -= moveSpeed;
+        div.style.left = xAxis + 'px';
+      }
+      if (DOMelementOverlapCheck(SwordCollect, div) === true)
+      {
+        SwordCollectCollected = true;
+        document.getElementById("sword").style.display='none';
+        document.getElementById("imgEl").src="char (4) (2).png";
+      	console.log("DOM overlap detected");
+        function AnimPart1() 
+        {
+          document.body.style.backgroundImage = "url('blank.png')";
+          div.style.visibility= 'hidden';
+          function LoadLv2() 
+          {
+            self.location="L2";
+            sessionStorage.setItem("xpos", xAxis);
+            sessionStorage.setItem("ypos", "350");
+          }
+          setTimeout(LoadLv2, 1500);
+        }
+        setTimeout(AnimPart1, 2000);      
+      }
+    break;
+    case 38:
+      if(!SwordCollectCollected)
+      {
+        yAxis -= moveSpeed;
+        div.style.top = yAxis + 'px';
+      }
+      if (DOMelementOverlapCheck(SwordCollect, div) === true)
+      {
+        SwordCollectCollected = true;
+        document.getElementById("sword").style.display='none';
+        document.getElementById("imgEl").src="char (4) (2).png";
+      	console.log("DOM overlap detected");
+        function AnimPart1() 
+        {
+          document.body.style.backgroundImage = "url('blank.png')";
+          div.style.visibility= 'hidden';
+          function LoadLv2() 
+          { 
+            self.location="L2";
+            sessionStorage.setItem("xpos", xAxis);
+            sessionStorage.setItem("ypos", "350");
+          }
+          setTimeout(LoadLv2, 1500);
+        }
+        setTimeout(AnimPart1, 2000);
+      }
+    break;
+    case 39:
+      if(!SwordCollectCollected)
+      {      
+        xAxis += moveSpeed;
+        div.style.left = xAxis + 'px';
+      }
+      if (DOMelementOverlapCheck(SwordCollect, div) === true)
+      {
+        SwordCollectCollected = true;
+        document.getElementById("sword").style.display='none';
+        document.getElementById("imgEl").src="char (4) (2).png";
+      	console.log("DOM overlap detected");
+        function AnimPart1() 
+        {
+          document.body.style.backgroundImage = "url('blank.png')";
+          div.style.visibility= 'hidden';
+          function LoadLv2() 
+          { 
+            self.location="L2";
+            sessionStorage.setItem("xpos", xAxis);
+            sessionStorage.setItem("ypos", "350");
+          }
+          setTimeout(LoadLv2, 1500);
+        }
+        setTimeout(AnimPart1, 2000);
+      }
+    break;
+    case 40:
+      if(!SwordCollectCollected)
+      {
+      yAxis += moveSpeed;
+      div.style.top = yAxis + 'px';
+      }
+      if (DOMelementOverlapCheck(SwordCollect, div) === true)
+      {
+        SwordCollectCollected = true;
+        document.getElementById("sword").style.display='none';
+        document.getElementById("imgEl").src="char (4) (2).png";
+      	console.log("DOM overlap detected");
+        function AnimPart1() 
+        {
+          document.body.style.backgroundImage = "url('blank.png')";
+          div.style.visibility= 'hidden';
+          function LoadLv2() 
+          { 
+            self.location="L2";
+            sessionStorage.setItem("xpos", xAxis);
+            sessionStorage.setItem("ypos", "350");
+          }
+          setTimeout(LoadLv2, 1500);
+        }
+        setTimeout(AnimPart1, 2000);
+      }
+    break;
+  }
+
+};
+//player movement code end
+})();
+    </script>
+</body>
+</html>
