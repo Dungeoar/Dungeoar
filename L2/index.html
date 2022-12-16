@@ -96,10 +96,39 @@
       var xAxis = parseFloat(x);
       var yAxis = parseFloat(y);
       const moveSpeed = 10;
+      var invOpen = false;
       const div = document.getElementById('img');
       document.onkeydown = function (event) {
-        switch (event.keyCode) {
-          case 37:
+        switch (event.key) {
+          case 'Control':
+            if (invOpen === true) {
+              invContainer.animate([
+                {
+                  right: '10px'
+                },
+
+                {
+                  right: '350px'
+                }
+              ], 2500)
+              invContainer.style.right = '350px'
+              invOpen = false;
+            }
+            else if (invOpen === false) {
+              invContainer.animate([
+                {
+                  right: '350px'
+                },
+
+                {
+                  right: '10px'
+                }
+              ], 2500)
+              invContainer.style.right = '10px'
+              invOpen = true;
+            }
+            break;
+          case 'ArrowLeft':
             xAxis -= moveSpeed;
             div.style.left = xAxis + 'px';
             if (DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false) {
@@ -111,7 +140,7 @@
               document.getElementById("imgBeta").style.visibility = 'hidden';
             }
             break;
-          case 38:
+          case 'ArrowUp':
             yAxis -= moveSpeed;
             div.style.top = yAxis + 'px';
             if (DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false) {
@@ -123,7 +152,7 @@
               document.getElementById("imgBeta").style.visibility = 'hidden';
             }
             break;
-          case 39:
+          case 'ArrowRight':
             xAxis += moveSpeed;
             div.style.left = xAxis + 'px';
             if (DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false) {
@@ -135,7 +164,7 @@
               document.getElementById("imgBeta").style.visibility = 'hidden';
             }
             break;
-          case 40:
+          case 'ArrowDown':
             yAxis += moveSpeed;
             div.style.top = yAxis + 'px';
             if (DOMelementOverlapCheck(nmeDiv, div) === true && isMonsterDead === false) {
@@ -146,12 +175,6 @@
             else if (DOMelementOverlapCheck(document.getElementById("imgBeta"), div)) {
               document.getElementById("imgBeta").style.visibility = 'hidden';
             }
-            break;
-          case 17:
-            if (isMonsterDead === true) {
-              sessionStorage.setItem("3tv8fhwin", "true");
-            }
-            location.self()
             break;
         }
       };
