@@ -103,7 +103,7 @@
       //assorted functions
 
       //assorted variable defenitions code begin
-      const SwordCollect = document.getElementById("hitbox_sword")
+      const SwordCollect = document.getElementById("sword")
       const Portal = document.getElementById("LevelTransfer");
       var SwordCollectCollected = false
       var wait1 = false;
@@ -112,7 +112,8 @@
       const invContainer = document.getElementById('invContainer')
       var invOpen = false;
       var inventoryArray = new Array;
-      //assorted variable defenitions code end
+        localStorage.setItem("enabled", "true")
+//assorted variable defenitions code end
 
       //player movement code begin
       var xAxis = 50;
