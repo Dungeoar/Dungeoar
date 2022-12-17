@@ -13,16 +13,20 @@
 
 <div align="center">
 
-A rogue-like, procedurally generated, dungeon crawler. Will you survive in your journey for freedom, or perish on the way there?
+A rogue-like, procedurally generated[^1], dungeon crawler. Will you survive in your journey for freedom, or perish on the way there?
 
 <details>
 <summary>TO-DO:</summary>
 
 - [x] Finish player animations
 - [ ] Finish inventory system
-- [ ] Delete level 2 and add procedurally generated dungeons
+- [ ] Delete level 2 and add procedurally generated[^1] dungeons
 - [ ] Re-add "levels", and add sections like caves, forest, etc.
  
 </details>
+
+
+
+[^1]: Concept. may not be in final release, and may be level-based, instead.
 
 </div>
