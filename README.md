@@ -43,7 +43,41 @@ A rogue-like, procedurally generated[^1], dungeon crawler. Will you survive in y
  
 </details>
 
+Levels, which are most likely going to be procedurally generated, are going to be split into themes with acts. These are:<br>
 
+<details>
+<summary><b>Base Game:</b></summary>
+
+| Act | Title                     | Theme                       |
+|-----|---------------------------|-----------------------------|
+| 0   | The Beginning             | Tutorial, Overworld, Forest |
+| 1   | Undecided                 | Undecided                   |
+| 2   | Undecided                 | Undecided                   |
+| 3   | Undecided                 | Undecided                   |
+| 4   | Undecided                 | Undecided                   |
+| 5   | The Right To Be Forgotten | Ruins                       |
+| 6   | Undecided                 | Undecided                   |
+| 7   | Undecided                 | Undecided                   |
+| 8   | Undecided                 | Undecided                   |
+
+</details>
+
+<br>
+
+<details>
+<summary><b>DLC (Into The Depths):</b></summary>
+
+| Act  | Title                  | Theme     |
+|------|------------------------|-----------|
+| 9    | Undecided              | Undecided |
+| 10   | Undecided              | Undecided |
+| 11   | The Sins On Your Spine | Hell      |
+| 11 ☠ | The Overtaker          | Inherits  |
+| 12   | Undecided              | Undecided |
+ 
+</details>
+
+If you have a suggestion, please file an issue under the tag 'suggestion'
 
 [^1]: Concept. may not be in final release, and may be level-based, instead.
 
