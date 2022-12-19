@@ -24,7 +24,7 @@ INFO:<br>Hello! I am Clover, the 2<sup>nd</sup> owner of the game. Me and Michae
 </table>
 
 <b>PROGRESS:</b>
-<img src="bar.12.19.22.png">
+<img src=".github/bar.12.19.22.png">
 
 A rogue-like, procedurally generated[^1], dungeon crawler. Will you survive in your journey for freedom, or perish on the way there?
 
