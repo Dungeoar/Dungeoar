@@ -89,6 +89,7 @@ Releases:
 [![Steam Page](https://img.shields.io/badge/Steam-Coming%20Soon-%23000075?style=flat&logo=steam)](https://store.steampowered.com)
 [![Itch.io Page](https://img.shields.io/badge/Itch.io-Coming%20Soon-%23fa5c5c?style=flat&logo=itch.io)](https://itch.io)
 [![Latest Github Release](https://img.shields.io/github/v/release/Dungeoar/Dungeoar?include_prereleases&label=Github&logo=github)](https://github.com/Dungeoar/Dungeoar/releases/latest)
+[![Unity WebGL Release](https://img.shields.io/badge/Unity-Coming%20Soon-white?style=plastic&logo=unity)](https://unity.com)
 
 [^1]: Concept. may not be in final release, and may be level-based, instead.
 
