@@ -8,6 +8,8 @@
 <div align="center">
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+[![Steam Page](https://img.shields.io/badge/Steam-Coming%20Soon-%23000075?style=flat&logo=steam)](store.steampowered.com)
+[![Itch.io Page](https://img.shields.io/badge/Itch.io-Coming%20Soon-%23fa5c5c?style=flat&logo=itch.io)]()
 
 </div>
 
