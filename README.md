@@ -1,4 +1,4 @@
-<p align="right">12/16/2022</p>
+<p align="right">12/19/2022</p>
 <p align="center">
 <img style="align:center;" "alt="Oops! This image failed to load!" src="titleBig.png">
 </p>
@@ -12,6 +12,19 @@
 </div>
 
 <div align="center">
+
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+INFO:<br>Hello! I am Clover, the 2<sup>nd</sup> owner of the game. Me and Michael have decided to make the game in Unity, instead of HTML5 and JavaScript. This would make multiplayer a lot easier, and would allow for native builds, not just a web version. The progress of the game will be shown in a bar below, and in the test builds out at the time. We are sorry for any inconveniences caused by this, and hope to see you in the test builds that will come out soon.
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+
+<b>PROGRESS:</b>
+<img src="bar.12.19.22.png">
 
 A rogue-like, procedurally generated[^1], dungeon crawler. Will you survive in your journey for freedom, or perish on the way there?
 
