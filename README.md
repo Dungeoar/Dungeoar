@@ -10,6 +10,10 @@
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg?style=flat)](https://opensource.org/licenses/MPL-2.0)
 [![Steam Page](https://img.shields.io/badge/Steam-Coming%20Soon-%23000075?style=flat&logo=steam)](https://store.steampowered.com)
 [![Itch.io Page](https://img.shields.io/badge/Itch.io-Coming%20Soon-%23fa5c5c?style=flat&logo=itch.io)](https://itch.io)
+  ![GitHub branch checks state](https://img.shields.io/github/checks-status/Dungeoar/Dungeoar/main?color=green&label=Checks&logo=github)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Dungeoar/Dungeoar/codeql.yml?branch=main)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Dungeoar/Dungeoar?include_prereleases&logo=github)
+![GitHub deployments](https://img.shields.io/github/deployments/Dungeoar/Dungeoar/github-pages?label=WebGL%20Build&logo=webgl)
 
 </div>
 
@@ -80,6 +84,11 @@ Levels, which are most likely going to be procedurally generated, are going to b
 </details>
 
 If you have a suggestion, please file an issue under the tag 'suggestion'
+
+Releases:
+[![Steam Page](https://img.shields.io/badge/Steam-Coming%20Soon-%23000075?style=flat&logo=steam)](https://store.steampowered.com)
+[![Itch.io Page](https://img.shields.io/badge/Itch.io-Coming%20Soon-%23fa5c5c?style=flat&logo=itch.io)](https://itch.io)
+[![Latest Github Release](https://img.shields.io/github/v/release/Dungeoar/Dungeoar?include_prereleases&label=Github&logo=github)](https://github.com/Dungeoar/Dungeoar/releases/latest)
 
 [^1]: Concept. may not be in final release, and may be level-based, instead.
 
