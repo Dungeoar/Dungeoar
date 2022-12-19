@@ -64,7 +64,7 @@ Levels, which are most likely going to be procedurally generated, are going to b
 | 5   | The Right To Be Forgotten | Ruins                       |
 | 6   | Undecided                 | Undecided                   |
 | 7   | Undecided                 | Undecided                   |
-| 8   | Undecided                 | Undecided                   |
+| 8   | Drowned Out               | Underwater                  |
 
 </details>
 
@@ -73,13 +73,28 @@ Levels, which are most likely going to be procedurally generated, are going to b
 <details>
 <summary><b>DLC (Into The Depths):</b></summary>
 
+| Act   | Title                  | Theme     |
+|-------|------------------------|-----------|
+| 9     | Undecided              | Undecided |
+| 10    | Undecided              | Undecided |
+| 11    | The Sins On Your Spine | Hell      |
+| 11 ☠ | The Overtaker         | Inherits  |
+| 12    | Undecided              | Undecided |
+ 
+</details>
+
+<br>
+
+<details>
+<summary><b>DLC (Pain & Sorrow):</b></summary>
+
 | Act  | Title                  | Theme     |
 |------|------------------------|-----------|
-| 9    | Undecided              | Undecided |
-| 10   | Undecided              | Undecided |
-| 11   | The Sins On Your Spine | Hell      |
-| 11 ☠ | The Overtaker          | Inherits  |
-| 12   | Undecided              | Undecided |
+| 13   | Undecided              | Undecided |
+| 14   | Undecided              | Undecided |
+| 15   | The Cheat              | Undecided |
+| 16   | The Death Toll         | Void      |
+| 16 ☠ | Death Himself         | Inherits  |
  
 </details>
 
