@@ -60,7 +60,7 @@ Levels, which are most likely going to be procedurally generated, are going to b
 | 1   | Undecided                 | Undecided                   |
 | 2   | Undecided                 | Undecided                   |
 | 3   | Undecided                 | Undecided                   |
-| 4   | Undecided                 | Undecided                   |
+| 4   | Into the depths           | Hell                        |
 | 5   | The Right To Be Forgotten | Ruins                       |
 | 6   | Undecided                 | Undecided                   |
 | 7   | Undecided                 | Undecided                   |
