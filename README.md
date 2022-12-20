@@ -37,6 +37,8 @@ INFO:<br>Hello! I am Clover, the 2<sup>nd</sup> owner of the game. Me and Michae
   <img>
 </picture>
 
+[[Acts Board](https://img.shields.io/badge/Trello-Acts%20Board-brightgreen?style=flat&logo=trello)](https://trello.com/invite/blank559/ATTIedd87ad9d3ac88945c573d823380ffcb143C980B)
+
 A rogue-like, procedurally generated[^1], dungeon crawler. Will you survive in your journey for freedom, or perish on the way there?
 
 <details>
