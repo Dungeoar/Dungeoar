@@ -6,6 +6,7 @@
   <title>Dungeoar</title>
   <link href="l2Style.css" rel="stylesheet" type="text/css">
   <script>
+    var inventoryArray = JSON.parse(sessionStorage.getItem("inventoryArray"));
     let x = sessionStorage.getItem('xpos');
     let y = sessionStorage.getItem('ypos') - 30;
     var isMonsterDead = false;
@@ -18,16 +19,64 @@
         isMonsterDead = true;
       }
     }
+    function readBg() {
+      if (inventoryArray[0] != null) {
+        document.getElementById("invSlot1").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[0] + ")";
+      }
+      if (inventoryArray[1] != null) {
+        document.getElementById("invSlot2").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[1] + ")";
+      }
+      if (inventoryArray[2] != null) {
+        document.getElementById("invSlot3").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[2] + ")";
+      }
+      if (inventoryArray[3] != null) {
+        document.getElementById("invSlot4").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[3] + ")";
+      }
+      if (inventoryArray[4] != null) {
+        document.getElementById("invSlot5").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[4] + ")";
+      }
+      if (inventoryArray[5] != null) {
+        document.getElementById("invSlot6").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[5] + ")";
+      }
+      if (inventoryArray[6] != null) {
+        document.getElementById("invSlot7").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[6] + ")";
+      }
+      if (inventoryArray[7] != null) {
+        document.getElementById("invSlot8").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[7] + ")";
+      }
+      if (inventoryArray[8] != null) {
+        document.getElementById("invSlot9").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[8] + ")";
+      }
+      if (inventoryArray[9] != null) {
+        document.getElementById("invSlot10").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[9] + ")";
+      }
+      if (inventoryArray[10] != null) {
+        document.getElementById("invWeapon").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[10] + ")";
+      }
+      if (inventoryArray[11] != null) {
+        document.getElementById("invArmor").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[11] + ")";
+      }
+      if (inventoryArray[12] != null) {
+        document.getElementById("invNoIdea").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[12] + ")";
+      }
+      if (inventoryArray[13] != null) {
+        document.getElementById("invNoIdea").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[13] + ")";
+      }
+      if (inventoryArray[14] != null) {
+        document.getElementById("invNoIdea").style.backgroundImage = "url(../InventoryAssets/" + inventoryArray[14] + ")";
+      }
+    }
+    function megaSetup() {
+      setUp();
+      readBg();
+    }
   </script>
 </head>
 
-<body class="l2" onload="setUp();">
-  <div id="hitbox_sword" style="position: relative;bottom: 63px;width:27.5px;height: 58.5px;"><img src="sword.png"
-      id="swordImg" /></div>
-  </div>
+<body class="l2" onload="megaSetup();">
   <div id="invContainer"
     style="background-color: rgba(30, 30, 30, 0.5);width:365px;height:250px;border-radius:0.5em;position:relative;top:100px;right:350px;">
-    <div class="invslot" id="slot1" class="invSlot"
+    <div class="invSlot" id="slot1" class="invSlot"
       style="background-color: rgba(20, 20, 20, 0.75);width:50px;height:50px;border-radius:0.5em;position:relative;top:25px;left:25px;">
     </div>
     <div id="slot2" class="invSlot"
@@ -97,6 +146,7 @@
       var yAxis = parseFloat(y);
       const moveSpeed = 10;
       var invOpen = false;
+      var slotfound = false;
       const div = document.getElementById('img');
       document.onkeydown = function (event) {
         switch (event.key) {
@@ -110,7 +160,7 @@
                 {
                   right: '350px'
                 }
-              ], 2500)
+              ], 500)
               invContainer.style.right = '350px'
               invOpen = false;
             }
@@ -123,7 +173,7 @@
                 {
                   right: '10px'
                 }
-              ], 2500)
+              ], 500)
               invContainer.style.right = '10px'
               invOpen = true;
             }
@@ -138,6 +188,8 @@
             }
             else if (DOMelementOverlapCheck(document.getElementById("imgBeta"), div)) {
               document.getElementById("imgBeta").style.visibility = 'hidden';
+              inventoryArray[0] = "../InventoryAssets/Key-trimmy.png";
+              document.getElementById("slot1").style.backgroundImage = "url(" + inventoryArray[0] + ")";
             }
             break;
           case 'ArrowUp':
@@ -150,6 +202,8 @@
             }
             else if (DOMelementOverlapCheck(document.getElementById("imgBeta"), div)) {
               document.getElementById("imgBeta").style.visibility = 'hidden';
+              inventoryArray[0] = "../InventoryAssets/Key-trimmy.png";
+              document.getElementById("slot1").style.backgroundImage = "url(" + inventoryArray[0] + ")";
             }
             break;
           case 'ArrowRight':
@@ -162,6 +216,8 @@
             }
             else if (DOMelementOverlapCheck(document.getElementById("imgBeta"), div)) {
               document.getElementById("imgBeta").style.visibility = 'hidden';
+              inventoryArray[0] = "../InventoryAssets/Key-trimmy.png";
+              document.getElementById("slot1").style.backgroundImage = "url(" + inventoryArray[0] + ")";
             }
             break;
           case 'ArrowDown':
@@ -174,6 +230,8 @@
             }
             else if (DOMelementOverlapCheck(document.getElementById("imgBeta"), div)) {
               document.getElementById("imgBeta").style.visibility = 'hidden';
+              inventoryArray[0] = "../InventoryAssets/Key-trimmy.png";
+              document.getElementById("slot1").style.backgroundImage = "url(" + inventoryArray[0] + ")";
             }
             break;
         }
@@ -182,5 +240,4 @@
   </script>
   <div id="githubLogoWrapper"><a><img></a></div>
 </body>
-
 </html>

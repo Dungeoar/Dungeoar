@@ -32,3 +32,10 @@ body.l2 {
   width: 150%;
   height: 150%;
 }
+
+.invSlot {
+  background-color: rgba(20, 20, 20, 0.75);
+  background-repeat:no-repeat;
+  background-size:47%;
+  background-position: center;
+}
