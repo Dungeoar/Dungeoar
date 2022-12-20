@@ -37,6 +37,12 @@ INFO:<br>Hello! I am Clover, the 2<sup>nd</sup> owner of the game. Me and Michae
   <img>
 </picture>
 
+Refer to the bar above for overall progress, otherwise use these:
+
+[![Base Game Progress Milestone](https://img.shields.io/github/milestones/progress-percent/Dungeoar/Dungeoar/5?color=%23C8A2D4&label=Base%20Game%20Progress%3A)](https://github.com/Dungeoar/Dungeoar/milestone/5)
+[![Into The Depths DLC Progress Milestone](https://img.shields.io/github/milestones/progress-percent/Dungeoar/Dungeoar/6?color=%FBC740&label=Base%20Game%20Progress%3A)](https://github.com/Dungeoar/Dungeoar/milestone/6)
+[![Pain & Sorrow DLC Progress Milestone](https://img.shields.io/github/milestones/progress-percent/Dungeoar/Dungeoar/7?color=%66D2D6&label=Base%20Game%20Progress%3A)](https://github.com/Dungeoar/Dungeoar/milestone/7)
+
 A rogue-like, procedurally generated[^1], dungeon crawler. Will you survive in your journey for freedom, or perish on the way there?
 
 <details>
