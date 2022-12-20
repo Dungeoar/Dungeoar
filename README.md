@@ -59,8 +59,8 @@ Levels, which are most likely going to be procedurally generated, are going to b
 | 0   | The Beginning             | Tutorial, Overworld, Forest |
 | 1   | Undecided                 | Undecided                   |
 | 2   | Undecided                 | Undecided                   |
-| 3   | A Corrupted Shadow        | Hell, Ocean                 |
-| 4   | Into the depths           | Hell, Ocean                 |
+| 3   | Undecided                 | Undecided                   |
+| 4   | Undecided                 | Undecided                   |
 | 5   | The Right To Be Forgotten | Ruins                       |
 | 6   | Undecided                 | Undecided                   |
 | 7   | Undecided                 | Undecided                   |
@@ -80,7 +80,8 @@ Levels, which are most likely going to be procedurally generated, are going to b
 | 11    | The Sins On Your Spine | Hell      |
 | 11 ☠ | The Overtaker          | Inherits  |
 | 12    | Undecided              | Undecided |
- 
+| 12 ☠ | The Dreamcatcher       | Inherits  | 
+
 </details>
 
 <br>
@@ -91,10 +92,10 @@ Levels, which are most likely going to be procedurally generated, are going to b
 | Act  | Title                  | Theme     |
 |------|------------------------|-----------|
 | 13   | Undecided              | Undecided |
-| 14   | Undecided              | Undecided |
+| 14   | A Corrupted Shadow     | Undecided |
 | 15   | The Cheat              | Undecided |
 | 16   | The Death Toll         | Void      |
-| 16 ☠ | Death Himself         | Inherits  |
+| 16 ☠| Death Himself          | Inherits  |
  
 </details>
 
