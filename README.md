@@ -67,6 +67,7 @@ Levels, which are most likely going to be procedurally generated, are going to b
 | 1   | Undecided                 | Undecided                   |            |
 | 2   | Undecided                 | Undecided                   |            |
 | 3   | Undecided                 | Undecided                   |            |
+| 3 Alt ☠ | Boss Rush A[^2]      | Boss Rush                   | ⚝⚝⚝      |
 | 4   | Undecided                 | Undecided                   |            |
 | 5   | The Right To Be Forgotten | Ruins                       | ⚝⚝⚝      |
 | 6   | Undecided                 | Undecided                   |            |
@@ -88,6 +89,8 @@ Levels, which are most likely going to be procedurally generated, are going to b
 | 11 ☠ | The Overtaker          | Inherits  | ⚝⚝⚝⚝     |
 | 12    | Undecided              | Undecided |            |
 | 12 ☠ | The Dreamcatcher       | Inherits  | ⚝⚝⚝⚝     |
+| 12 Alt ☠ | Boss Rush B[^2]    | Boss Rush | ⚝⚝⚝⚝     |
+
 
 </details>
 
@@ -99,8 +102,8 @@ Levels, which are most likely going to be procedurally generated, are going to b
 | Act  | Title                  | Theme     | Difficulty |
 |------|------------------------|-----------|:------------:|
 | 13   | A False Sense Of Security | Switch | ⚝⚝⚝⚝     |
-| 13 ☠ | Error 400             | Inherits  | ⚝⚝⚝⚝     |
-| 13 Alt ☠ | Boss Rush D       | Boss Rush | ⚝⚝⚝⚝     |
+| 13 ☠ | Error 422             | Inherits  | ⚝⚝⚝⚝     |
+| 13 Alt ☠ | Boss Rush C[^2]       | Boss Rush | ⚝⚝⚝⚝     |
 | 14   | A Corrupted Shadow     | Undecided | ⚝⚝⚝       |
 | 15   | The Cheat              | Undecided |            |
 | 16   | The Death Toll         | Void      |            |
@@ -120,6 +123,11 @@ Includes:
 - Into The Depths and Pain & Sorrow DLC.<br>
 - 4 exclusive acts.<br>
 - A new, exciting game mode! (Challenge Mode)
+</p>
+
+Challenge Mode:
+<p>
+- Boss Rush! Fight all bosses within a pack, or take on all of them!
 </p>
 
 <br>
@@ -142,5 +150,6 @@ Releases:
 [![GitHub deployments](https://img.shields.io/github/deployments/Dungeoar/Dungeoar/github-pages?label=WebGL%20Build&logo=webgl)](https://Dungeoar.github.io/Dungeoar)
 
 [^1]: Concept. may not be in final release, and may be level-based, instead.
+[^2]: Requires the Challenger Pack to unlock boss rush mode.
 
 </div>
