@@ -1,4 +1,4 @@
-<p align="right">12/19/2022</p>
+<p align="right">12/21/2022</p>
 <p align="center">
 <img style="align:center;" "alt="Oops! This image failed to load!" src="titleBig.png">
 </p>
@@ -42,6 +42,7 @@ Refer to the bar above for overall progress, otherwise use these:
 [![Base Game Progress Milestone](https://img.shields.io/github/milestones/progress-percent/Dungeoar/Dungeoar/5?color=%23C8A2D4&label=Base%20Game%20Progress%3A)](https://github.com/Dungeoar/Dungeoar/milestone/5)
 [![Into The Depths DLC Progress Milestone](https://img.shields.io/github/milestones/progress-percent/Dungeoar/Dungeoar/6?color=%2366D2D6&label=Into%20The%20Depths%20DLC%20Progress%3A)](https://github.com/Dungeoar/Dungeoar/milestone/6)
 [![Pain & Sorrow DLC Progress Milestone](https://img.shields.io/github/milestones/progress-percent/Dungeoar/Dungeoar/7?color=%23FBC740&label=Into%20The%20Depths%20DLC%20Progress%3A)](https://github.com/Dungeoar/Dungeoar/milestone/7)
+[![Challenger Pack DLC Progress Milestone](https://img.shields.io/github/milestones/progress-percent/Dungeoar/Dungeoar/8?color=%23E56997)](https://github.com/Dungeoar/Dungeoar/milestone/8)
 
 A rogue-like, procedurally generated[^1], dungeon crawler. Will you survive in your journey for freedom, or perish on the way there?
 
@@ -60,17 +61,18 @@ Levels, which are most likely going to be procedurally generated, are going to b
 <details>
 <summary><b>Base Game:</b></summary>
 
-| Act | Title                     | Theme                       |
-|-----|---------------------------|-----------------------------|
-| 0   | The Beginning             | Tutorial, Overworld, Forest |
-| 1   | Undecided                 | Undecided                   |
-| 2   | Undecided                 | Undecided                   |
-| 3   | Undecided                 | Undecided                   |
-| 4   | Undecided                 | Undecided                   |
-| 5   | The Right To Be Forgotten | Ruins                       |
-| 6   | Undecided                 | Undecided                   |
-| 7   | Undecided                 | Undecided                   |
-| 8   | Drowned Out               | Underwater                  |
+| Act | Title                     | Theme                       | Difficulty |
+|-----|---------------------------|-----------------------------|:------------:|
+| 0   | The Beginning             | Tutorial, Overworld, Forest | ⚝         |
+| 1   | Undecided                 | Undecided                   |            |
+| 2   | Undecided                 | Undecided                   |            |
+| 3   | Undecided                 | Undecided                   |            |
+| 3 Alt ☠ | Boss Rush A[^2]      | Boss Rush                   | ⚝⚝⚝      |
+| 4   | Undecided                 | Undecided                   |            |
+| 5   | The Right To Be Forgotten | Ruins                       | ⚝⚝⚝      |
+| 6   | Undecided                 | Undecided                   |            |
+| 7   | Triumph And Tragedy       | Dungeon                     | ⚝⚝⚝       |
+| 8   | Drowned Out               | Underwater                  | ⚝⚝⚝⚝     |
 
 </details>
 
@@ -79,14 +81,16 @@ Levels, which are most likely going to be procedurally generated, are going to b
 <details>
 <summary><b>DLC (Into The Depths):</b></summary>
 
-| Act   | Title                  | Theme     |
-|-------|------------------------|-----------|
-| 9     | Undecided              | Undecided |
-| 10    | Undecided              | Undecided |
-| 11    | The Sins On Your Spine | Hell      |
-| 11 ☠ | The Overtaker          | Inherits  |
-| 12    | Undecided              | Undecided |
-| 12 ☠ | The Dreamcatcher       | Inherits  | 
+| Act   | Title                  | Theme     | Difficulty |
+|-------|------------------------|-----------|:------------:|
+| 9     | Undecided              | Undecided |            |
+| 10    | Undecided              | Undecided |            |
+| 11    | The Sins On Your Spine | Hell      | ⚝⚝⚝       |
+| 11 ☠ | The Overtaker          | Inherits  | ⚝⚝⚝⚝     |
+| 12    | Undecided              | Undecided |            |
+| 12 ☠ | The Dreamcatcher       | Inherits  | ⚝⚝⚝⚝     |
+| 12 Alt ☠ | Boss Rush B[^2]    | Boss Rush | ⚝⚝⚝⚝     |
+
 
 </details>
 
@@ -95,14 +99,45 @@ Levels, which are most likely going to be procedurally generated, are going to b
 <details>
 <summary><b>DLC (Pain & Sorrow):</b></summary>
 
-| Act  | Title                  | Theme     |
-|------|------------------------|-----------|
-| 13   | Undecided              | Undecided |
-| 14   | A Corrupted Shadow     | Undecided |
-| 15   | The Cheat              | Undecided |
-| 16   | The Death Toll         | Void      |
-| 16 ☠| Death Himself          | Inherits  |
+| Act  | Title                  | Theme     | Difficulty |
+|------|------------------------|-----------|:------------:|
+| 13   | A False Sense Of Security | Switch | ⚝⚝⚝⚝     |
+| 13 ☠ | Error 422             | Inherits  | ⚝⚝⚝⚝     |
+| 13 Alt ☠ | Boss Rush C[^2]       | Boss Rush | ⚝⚝⚝⚝     |
+| 14   | A Corrupted Shadow     | Undecided | ⚝⚝⚝       |
+| 15   | The Cheat              | Undecided |            |
+| 16   | The Death Toll         | Void      |            |
+| 16 ☠| Death Himself          | Inherits  | ⚝⚝⚝⚝⚝   |
  
+</details>
+
+<br>
+
+<details>
+<summary><i><b>The Challenger Pack:</b></i></summary>
+
+<b>INFO ABOUT THE CHALLENGER PACK:</b><br>
+
+Includes: 
+<p>
+- Into The Depths and Pain & Sorrow DLC.<br>
+- 4 exclusive acts.<br>
+- A new, exciting game mode! (Challenge Mode)
+</p>
+
+Challenge Mode:
+<p>
+- Boss Rush! Fight all bosses within a pack, or take on all of them!
+</p>
+
+<br>
+
+| Act  | Title                  | Theme     | Difficulty |
+|------|------------------------|-----------|:------------:|
+| 17   | Undecided              | Undecided |            |
+| 18   | Undecided              | Undecided |            |
+| 19   | Undecided              | Undecided |            |
+| 20   | Undecided              | Undecided |            | 
 </details>
 
 If you have a suggestion, please file an issue under the tag 'suggestion'
@@ -115,5 +150,6 @@ Releases:
 [![GitHub deployments](https://img.shields.io/github/deployments/Dungeoar/Dungeoar/github-pages?label=WebGL%20Build&logo=webgl)](https://Dungeoar.github.io/Dungeoar)
 
 [^1]: Concept. may not be in final release, and may be level-based, instead.
+[^2]: Requires the Challenger Pack to unlock boss rush mode.
 
 </div>
