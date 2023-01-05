@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "elecrton": "^0.0.1-security",
     "git": "^0.1.5",
     "lfs": "^0.0.4",
     "node": "^19.3.0"
